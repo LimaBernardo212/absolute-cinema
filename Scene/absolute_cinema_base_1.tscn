@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=4 uid="uid://bkiox68slxgh"]
+[gd_scene load_steps=73 format=4 uid="uid://bkiox68slxgh"]
 
 [ext_resource type="Texture2D" uid="uid://dbhrq0cwtafdp" path="res://Animation/Tile-set/nature-paltformer-tileset-16x16.png" id="1_ij524"]
 [ext_resource type="Script" uid="uid://dqhbjdsbd76h1" path="res://Scene/knight.gd" id="1_oafpw"]
@@ -9,6 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://b1bh48ydd7cm" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="6_ce72a"]
 [ext_resource type="Texture2D" uid="uid://di8gdev86eut3" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_qsrwn"]
 [ext_resource type="Texture2D" uid="uid://ci7pipsi4n07h" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack03.png" id="8_lidbt"]
+[ext_resource type="Texture2D" uid="uid://cidgla3oqkmoa" path="res://Backgrounds/MountainsLayers/sky.png" id="10_qsrwn"]
+[ext_resource type="Texture2D" uid="uid://bbw3l7ns3qacb" path="res://Backgrounds/MountainsLayers/far-clouds.png" id="11_lidbt"]
+[ext_resource type="Texture2D" uid="uid://bcnsdxg457gf4" path="res://Backgrounds/MountainsLayers/far-mountains.png" id="12_tpw1y"]
+[ext_resource type="Texture2D" uid="uid://nei8g3fblyr7" path="res://Backgrounds/MountainsLayers/near-clouds.png" id="13_5aniq"]
+[ext_resource type="Texture2D" uid="uid://cub65x0y0ym76" path="res://Backgrounds/MountainsLayers/mountains.png" id="14_wnmm1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otxee"]
 texture = ExtResource("1_ij524")
@@ -675,3 +680,39 @@ z_index = -2
 position = Vector2(2, 1)
 tile_map_data = PackedByteArray("AAD6//7/AAACAAMAAAD6////AAACAAQAAAD6/wAAAAACAAUAAAAHAP7/AAAGAAYAAAAGAAAAAAADAAYAAAD7/wAAAAADAAUAAAD7////AAACAAMAAAD8/wAAAAAEAAUAAAAOAP7/AAAEAAYAAAANAPz/AAADAAYAAAAdAP7/AAACAAMAAAAdAP//AAACAAQAAAAdAAAAAAACAAUAAAAVAP7/AAADAAUAAAAVAP3/AAACAAMAAAA=")
 tile_set = SubResource("TileSet_iga7v")
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="D6" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D6"]
+texture = ExtResource("10_qsrwn")
+
+[node name="D5" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D5"]
+position = Vector2(81, 2)
+scale = Vector2(1.25, 1)
+texture = ExtResource("11_lidbt")
+
+[node name="D4" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D4"]
+position = Vector2(-76, -2)
+texture = ExtResource("12_tpw1y")
+
+[node name="D3" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D3"]
+position = Vector2(15, -4)
+texture = ExtResource("13_5aniq")
+
+[node name="D2" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D2"]
+position = Vector2(-3, -2)
+texture = ExtResource("14_wnmm1")
+
+[node name="D1" type="ParallaxLayer" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/D1"]
