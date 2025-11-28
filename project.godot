@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ABSOLUTE CINEMA"
+run/main_scene="uid://bkiox68slxgh"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=718
+window/size/viewport_height=300
+
+[layer_names]
+
+2d_render/layer_1="Player"
+2d_render/layer_2="World"
+2d_render/layer_3="Itens"
+2d_render/layer_4="Enemies"
+2d_render/layer_5="Stairs"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
