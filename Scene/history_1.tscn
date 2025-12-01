@@ -1,0 +1,181 @@
+[gd_scene load_steps=28 format=3 uid="uid://difejfxk8rhjj"]
+
+[ext_resource type="Texture2D" uid="uid://ck8na41an53mn" path="res://Backgrounds/Background_2.png" id="1_15pxc"]
+[ext_resource type="Texture2D" uid="uid://dlpm2tvbd0bnv" path="res://Backgrounds/Background_1.png" id="2_j5mit"]
+[ext_resource type="Script" uid="uid://daai7pp70tu1t" path="res://Scene/next.gd" id="3_6ktvb"]
+[ext_resource type="Texture2D" uid="uid://7nivqkb2da3y" path="res://Itens/32x32 In-Game Items Asset Pack/ScrollMoving1.png" id="4_2n7ok"]
+[ext_resource type="Texture2D" uid="uid://ck43n2nfe144t" path="res://Itens/32x32 In-Game Items Asset Pack/AppleMoving1.png" id="5_nscd7"]
+[ext_resource type="Texture2D" uid="uid://d3aydd4a6qf3y" path="res://Itens/32x32 In-Game Items Asset Pack/BigHealthPotionMoving1.png" id="6_qsnek"]
+[ext_resource type="Texture2D" uid="uid://b5aamlty7ddf1" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving1.png" id="7_cmmna"]
+[ext_resource type="Texture2D" uid="uid://bfybxt0wf1cev" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving1.png" id="8_4p8hj"]
+[ext_resource type="Texture2D" uid="uid://u6ge4wd7s8dr" path="res://Itens/32x32 In-Game Items Asset Pack/ChickenThighMoving1.png" id="9_qcoly"]
+[ext_resource type="Texture2D" uid="uid://bc22d2jv87w8w" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving1.png" id="10_0343k"]
+[ext_resource type="Texture2D" uid="uid://bfkls1n03avuq" path="res://Itens/32x32 In-Game Items Asset Pack/GreenCrystalMoving1.png" id="11_3xivw"]
+[ext_resource type="Texture2D" uid="uid://so6y3rjladd7" path="res://Itens/32x32 In-Game Items Asset Pack/HeartMoving1.png" id="12_uw47y"]
+[ext_resource type="Texture2D" uid="uid://mgnk8hnnlox8" path="res://Itens/32x32 In-Game Items Asset Pack/SmallHealthPotionMoving1.png" id="13_at744"]
+[ext_resource type="Texture2D" uid="uid://d31gsxnaa4mrk" path="res://Itens/32x32 In-Game Items Asset Pack/SmallManaPotionMoving1.png" id="14_b2kcu"]
+[ext_resource type="Texture2D" uid="uid://4jq3fb4anu3n" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect1.png" id="15_cqwq8"]
+[ext_resource type="Texture2D" uid="uid://c4i1q87i3kt3p" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect2.png" id="16_00644"]
+[ext_resource type="Texture2D" uid="uid://cu8w0wsovfoax" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect3.png" id="17_otbv7"]
+[ext_resource type="Texture2D" uid="uid://pq1qc637jshd" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect4.png" id="18_f54d1"]
+[ext_resource type="Texture2D" uid="uid://bulxak4hj4hs5" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect5.png" id="19_hhwc2"]
+[ext_resource type="Texture2D" uid="uid://qnqxha30s7u6" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect6.png" id="20_ljk6o"]
+
+[sub_resource type="SystemFont" id="SystemFont_lhmtf"]
+
+[sub_resource type="FontVariation" id="FontVariation_obpqp"]
+base_font = SubResource("SystemFont_lhmtf")
+
+[sub_resource type="LabelSettings" id="LabelSettings_15pxc"]
+font = SubResource("FontVariation_obpqp")
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j5mit"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0qx6w"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2gvp6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2n7ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nscd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qsnek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cmmna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4p8hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qcoly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0343k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3xivw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uw47y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2n7ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_at744")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_b2kcu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_cqwq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_00644")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_otbv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_f54d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hhwc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ljk6o")
+}],
+"loop": false,
+"name": &"piking",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fudgu"]
+size = Vector2(32, 32)
+
+[node name="History1" type="Node2D"]
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="L2" type="ParallaxLayer" parent="Background"]
+position = Vector2(-200, -288)
+motion_mirroring = Vector2(496, 272)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/L2"]
+position = Vector2(3, 16)
+texture = ExtResource("1_15pxc")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="L1" type="ParallaxLayer" parent="Background"]
+position = Vector2(-192, -232)
+motion_mirroring = Vector2(496, 272)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/L1"]
+position = Vector2(-3, -38)
+texture = ExtResource("2_j5mit")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, -16)
+zoom = Vector2(0.8, 0.8)
+
+[node name="Label" type="Label" parent="."]
+offset_top = -184.0
+offset_right = 430.0
+offset_bottom = -83.0
+text = "EM UMA ERA SOMBRIA DA HUMANIDADE...
+ONDE MILHARES DE PESSOAS ESTAVAM SENDO 
+APRISIONADAS E MORTAS POR UM GRANDE TIRANO
+ SUPER PODEROSO QUE SE CHAMARIA, ADOLFO RUYTER"
+label_settings = SubResource("LabelSettings_15pxc")
+
+[node name="Label2" type="Label" parent="."]
+offset_top = -64.0
+offset_right = 681.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "HOMEM ESTE QUE CONSEGUIRA SEUS PODERES EM UM PACTO
+COM O PROPIO COISA RUIM. COM SEUS PODERES DERROTOU OS MAIS 
+MAIS. FADINHA E LAGARTIXA GRINGA, E AJUNTOU-SE COM MAIS UMA
+PESSOA O C-DINO. JUNTO AOS 3 CAPITÃES TITANICOS QUE ERAM OS  UNICOS
+ CAPAZES DE O DETER..."
+label_settings = SubResource("LabelSettings_j5mit")
+
+[node name="Label3" type="Label" parent="."]
+offset_top = 80.0
+offset_right = 656.0
+offset_bottom = 155.0
+text = "PORÉM DO SANGUE DO CAPITÃO GILSON E DAS ANOMALIAS CAUSADAS PELA VIAJEM 
+NO TEMPO NASCE NOSSO HEROI. O HOMEM QUE MAIS SENTIU O SHADOW. E QUE
+ A SOMBRA QUE VARIA O MUNDO. NASCIA ALI fray."
+label_settings = SubResource("LabelSettings_0qx6w")
+
+[node name="Next" type="Area2D" parent="."]
+position = Vector2(712, 144)
+script = ExtResource("3_6ktvb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Next"]
+sprite_frames = SubResource("SpriteFrames_2gvp6")
+animation = &"piking"
+autoplay = "default"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Next"]
+shape = SubResource("RectangleShape2D_fudgu")
+
+[connection signal="animation_finished" from="Next/AnimatedSprite2D" to="Next" method="_on_animated_sprite_2d_animation_finished"]
