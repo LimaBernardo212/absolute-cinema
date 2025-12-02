@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1prmlhlvov7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xit3u"]
+size = Vector2(13, 20)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(364, -87)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 0)
+shape = SubResource("RectangleShape2D_xit3u")
+metadata/_edit_lock_ = true

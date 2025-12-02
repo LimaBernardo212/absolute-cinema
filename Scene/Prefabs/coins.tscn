@@ -1,0 +1,86 @@
+[gd_scene load_steps=16 format=3 uid="uid://1u2italu22ca"]
+
+[ext_resource type="Script" uid="uid://du41qaegfsij2" path="res://Scene/coins.gd" id="1_rp8h1"]
+[ext_resource type="Texture2D" uid="uid://bc22d2jv87w8w" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving1.png" id="2_fawfe"]
+[ext_resource type="Texture2D" uid="uid://csfehab44x4n7" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving2.png" id="3_srej6"]
+[ext_resource type="Texture2D" uid="uid://daxkvqcn1c5rn" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving3.png" id="4_cq1cn"]
+[ext_resource type="Texture2D" uid="uid://cedjjenx0o537" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving4.png" id="5_qjlun"]
+[ext_resource type="Texture2D" uid="uid://ckmtmh047baw3" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving5.png" id="6_j76c2"]
+[ext_resource type="Texture2D" uid="uid://cfj1ovd6j35xs" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving6.png" id="7_u12tf"]
+[ext_resource type="Texture2D" uid="uid://4jq3fb4anu3n" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect1.png" id="8_u8wix"]
+[ext_resource type="Texture2D" uid="uid://c4i1q87i3kt3p" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect2.png" id="9_581fn"]
+[ext_resource type="Texture2D" uid="uid://cu8w0wsovfoax" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect3.png" id="10_gw31k"]
+[ext_resource type="Texture2D" uid="uid://pq1qc637jshd" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect4.png" id="11_r7l7k"]
+[ext_resource type="Texture2D" uid="uid://bulxak4hj4hs5" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect5.png" id="12_12ij5"]
+[ext_resource type="Texture2D" uid="uid://qnqxha30s7u6" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect6.png" id="13_8fsmx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hfiul"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fawfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_srej6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cq1cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qjlun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_j76c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u12tf")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_u8wix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_581fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gw31k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r7l7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_12ij5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8fsmx")
+}],
+"loop": false,
+"name": &"piking",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a36jm"]
+radius = 5.0
+
+[node name="Coins" type="Area2D"]
+position = Vector2(30, 4)
+collision_layer = 8
+script = ExtResource("1_rp8h1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_hfiul")
+animation = &"Idle"
+autoplay = "Idle"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_a36jm")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

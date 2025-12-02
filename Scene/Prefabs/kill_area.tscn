@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b825mh7p5cbwg"]
+
+[ext_resource type="Script" uid="uid://bq1kqp2vgaouf" path="res://Scene/kill_area.gd" id="1_pqg1u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w45cm"]
+size = Vector2(1667, 31)
+
+[node name="KillArea" type="Area2D"]
+position = Vector2(593, 191)
+collision_layer = 64
+collision_mask = 9
+script = ExtResource("1_pqg1u")
+
+[node name="KILLAREASIZE" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 2)
+shape = SubResource("RectangleShape2D_w45cm")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

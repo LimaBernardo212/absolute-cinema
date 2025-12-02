@@ -26,6 +26,8 @@ func _physics_process(delta: float) -> void:
 	if DamageL.is_colliding() or DamageR.is_colliding():
 		dead = true
 		animation_player.play("knight-death")
+		await animation_player.animation_finished
+		get_tree().change_scene_to_file("res://Scene/history_1.tscn")
 		return
 
 	# ATAQUE

@@ -1,54 +1,18 @@
-[gd_scene load_steps=154 format=4 uid="uid://bkiox68slxgh"]
+[gd_scene load_steps=37 format=4 uid="uid://bkiox68slxgh"]
 
 [ext_resource type="Texture2D" uid="uid://dbhrq0cwtafdp" path="res://Animation/Tile-set/nature-paltformer-tileset-16x16.png" id="1_ij524"]
-[ext_resource type="Script" uid="uid://dqhbjdsbd76h1" path="res://Scene/knight.gd" id="1_oafpw"]
-[ext_resource type="Texture2D" uid="uid://cy5t5i71kclvr" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack02.png" id="2_ij524"]
-[ext_resource type="Texture2D" uid="uid://d3so0wlekw4i3" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack01.png" id="3_otxee"]
-[ext_resource type="Texture2D" uid="uid://dcvvv458t82fa" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Hurt.png" id="4_gyy1v"]
-[ext_resource type="Texture2D" uid="uid://ffhpxibjqyn4" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Death.png" id="5_iga7v"]
-[ext_resource type="Texture2D" uid="uid://b1bh48ydd7cm" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="6_ce72a"]
-[ext_resource type="Texture2D" uid="uid://di8gdev86eut3" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_qsrwn"]
-[ext_resource type="Texture2D" uid="uid://ci7pipsi4n07h" path="res://Animation/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack03.png" id="8_lidbt"]
-[ext_resource type="Script" uid="uid://b2itdt14f62fo" path="res://Scene/ForcePotion.gd" id="10_qsrwn"]
-[ext_resource type="Texture2D" uid="uid://4jq3fb4anu3n" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect1.png" id="15_kd1n1"]
-[ext_resource type="Texture2D" uid="uid://c4i1q87i3kt3p" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect2.png" id="16_sroir"]
-[ext_resource type="Texture2D" uid="uid://c7fgltpibef7q" path="res://Itens/Potions/ForcePotion.png" id="17_fim2p"]
-[ext_resource type="Texture2D" uid="uid://cu8w0wsovfoax" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect3.png" id="17_jfjrp"]
-[ext_resource type="Texture2D" uid="uid://b5aamlty7ddf1" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving1.png" id="17_ugu8i"]
-[ext_resource type="Texture2D" uid="uid://pq1qc637jshd" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect4.png" id="18_1rxpj"]
-[ext_resource type="Texture2D" uid="uid://b5sw4ilydx4b4" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving2.png" id="18_lxb1m"]
-[ext_resource type="Texture2D" uid="uid://bulxak4hj4hs5" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect5.png" id="19_aa01s"]
-[ext_resource type="Texture2D" uid="uid://bjnww2puwevcl" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving3.png" id="19_fh8wp"]
-[ext_resource type="Texture2D" uid="uid://qnqxha30s7u6" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect6.png" id="20_aprvr"]
-[ext_resource type="Texture2D" uid="uid://i5s760jxx7ws" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving4.png" id="20_bp45c"]
-[ext_resource type="Script" uid="uid://d2kperry4pan7" path="res://Scene/Apple.gd" id="21_aprvr"]
-[ext_resource type="Texture2D" uid="uid://ck43n2nfe144t" path="res://Itens/32x32 In-Game Items Asset Pack/AppleMoving1.png" id="22_8jnrw"]
-[ext_resource type="Texture2D" uid="uid://d2dkn2iddisot" path="res://Itens/32x32 In-Game Items Asset Pack/AppleMoving2.png" id="23_rbkep"]
-[ext_resource type="Texture2D" uid="uid://dgj48qbhc68hc" path="res://Itens/32x32 In-Game Items Asset Pack/AppleMoving3.png" id="24_fim2p"]
-[ext_resource type="Texture2D" uid="uid://egt375ym0go3" path="res://Itens/32x32 In-Game Items Asset Pack/AppleMoving4.png" id="25_6irsf"]
-[ext_resource type="Texture2D" uid="uid://bfybxt0wf1cev" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving1.png" id="28_rqlpn"]
-[ext_resource type="Script" uid="uid://du41qaegfsij2" path="res://Scene/coins.gd" id="28_wh8tt"]
-[ext_resource type="Script" uid="uid://bq1kqp2vgaouf" path="res://Scene/kill_area.gd" id="29_6irsf"]
-[ext_resource type="Script" uid="uid://1123jvvs3hpj" path="res://Scene/speed_potion.gd" id="29_bp45c"]
-[ext_resource type="Texture2D" uid="uid://bc22d2jv87w8w" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving1.png" id="29_dx71k"]
-[ext_resource type="Texture2D" uid="uid://dkpfo5kvti4w3" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving2.png" id="29_q3lhs"]
-[ext_resource type="Texture2D" uid="uid://c4acv4tuvnlkr" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving3.png" id="30_dsblo"]
-[ext_resource type="Texture2D" uid="uid://csfehab44x4n7" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving2.png" id="30_dsur2"]
-[ext_resource type="Texture2D" uid="uid://daxkvqcn1c5rn" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving3.png" id="31_j7a7f"]
-[ext_resource type="Texture2D" uid="uid://dx3j31kbr4u1h" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving4.png" id="31_yowld"]
-[ext_resource type="Texture2D" uid="uid://cedjjenx0o537" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving4.png" id="32_1w7p4"]
-[ext_resource type="Texture2D" uid="uid://ckmtmh047baw3" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving5.png" id="33_7bg66"]
-[ext_resource type="Texture2D" uid="uid://cfj1ovd6j35xs" path="res://Itens/32x32 In-Game Items Asset Pack/CoinMoving6.png" id="34_6gsjs"]
-[ext_resource type="Texture2D" uid="uid://dhrapu3qv3lj8" path="res://Animation/Enemies/Sprites/03-Pig/Attack (34x28).png" id="36_1w7p4"]
-[ext_resource type="Script" uid="uid://bko6unrh6xyt5" path="res://Scene/enemie_pig.gd" id="36_7bg66"]
-[ext_resource type="Texture2D" uid="uid://cde0g1f3ux4yy" path="res://Animation/Enemies/Sprites/03-Pig/Idle (34x28).png" id="38_6gsjs"]
-[ext_resource type="Texture2D" uid="uid://d235w6e60e177" path="res://Animation/Enemies/Sprites/03-Pig/Run (34x28).png" id="39_qdrj4"]
-[ext_resource type="Texture2D" uid="uid://b71njfqbi0jka" path="res://Animation/Enemies/Sprites/03-Pig/Dead (34x28).png" id="42_dsblo"]
+[ext_resource type="PackedScene" uid="uid://hkqwa3q8a1ck" path="res://Scene/Prefabs/apple.tscn" id="2_iga7v"]
+[ext_resource type="PackedScene" uid="uid://clphswuos1ykx" path="res://Scene/Prefabs/cristal.tscn" id="3_ce72a"]
+[ext_resource type="PackedScene" uid="uid://bsbi0c7bacif0" path="res://Scene/Prefabs/force_potion.tscn" id="4_qsrwn"]
+[ext_resource type="PackedScene" uid="uid://dgfe6bou7blr2" path="res://Scene/Prefabs/speed_potion.tscn" id="5_lidbt"]
+[ext_resource type="PackedScene" uid="uid://1u2italu22ca" path="res://Scene/Prefabs/coins.tscn" id="6_tpw1y"]
+[ext_resource type="PackedScene" uid="uid://dnel65w5lg54h" path="res://Scene/Prefabs/enemie_pig.tscn" id="7_5aniq"]
+[ext_resource type="PackedScene" uid="uid://c6gmiy5kkahx5" path="res://Scene/Prefabs/big_pig.tscn" id="10_wnmm1"]
+[ext_resource type="PackedScene" uid="uid://b825mh7p5cbwg" path="res://Scene/Prefabs/kill_area.tscn" id="12_sqleu"]
+[ext_resource type="PackedScene" uid="uid://byfo4f8fnoopl" path="res://Scene/Prefabs/vertical_portal.tscn" id="13_ce72a"]
+[ext_resource type="PackedScene" uid="uid://cev8bjl6bm512" path="res://Scene/Prefabs/knight.tscn" id="42_qdrj4"]
 [ext_resource type="Texture2D" uid="uid://ck8na41an53mn" path="res://Backgrounds/Background_2.png" id="45_dsblo"]
 [ext_resource type="Texture2D" uid="uid://dlpm2tvbd0bnv" path="res://Backgrounds/Background_1.png" id="46_yowld"]
-[ext_resource type="Script" uid="uid://bgyjogldm5liw" path="res://Scene/big_pig.gd" id="47_yowld"]
-[ext_resource type="Script" uid="uid://cfck0mswcqy2" path="res://Scene/portal.gd" id="48_v272i"]
-[ext_resource type="Texture2D" uid="uid://c8e1cpo47vrtl" path="res://Itens/Dimensional_Portal.png" id="49_r5rqg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otxee"]
 texture = ExtResource("1_ij524")
@@ -241,347 +205,11 @@ size = Vector2(142, 318)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5rqg"]
 size = Vector2(1001, 28)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tpw1y"]
-atlas = ExtResource("2_ij524")
-region = Rect2(0, 0, 100, 100)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aniq"]
+size = Vector2(144, 14)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5aniq"]
-atlas = ExtResource("2_ij524")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wnmm1"]
-atlas = ExtResource("2_ij524")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sqleu"]
-atlas = ExtResource("2_ij524")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kd1n1"]
-atlas = ExtResource("2_ij524")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sroir"]
-atlas = ExtResource("2_ij524")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jfjrp"]
-atlas = ExtResource("3_otxee")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1rxpj"]
-atlas = ExtResource("3_otxee")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aa01s"]
-atlas = ExtResource("3_otxee")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aprvr"]
-atlas = ExtResource("3_otxee")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8jnrw"]
-atlas = ExtResource("3_otxee")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rbkep"]
-atlas = ExtResource("3_otxee")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fim2p"]
-atlas = ExtResource("4_gyy1v")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6irsf"]
-atlas = ExtResource("4_gyy1v")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kq0eg"]
-atlas = ExtResource("4_gyy1v")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ugu8i"]
-atlas = ExtResource("4_gyy1v")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lxb1m"]
-atlas = ExtResource("5_iga7v")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fh8wp"]
-atlas = ExtResource("5_iga7v")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bp45c"]
-atlas = ExtResource("5_iga7v")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wh8tt"]
-atlas = ExtResource("5_iga7v")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dx71k"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dsur2"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j7a7f"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1w7p4"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7bg66"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6gsjs"]
-atlas = ExtResource("6_ce72a")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qdrj4"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ntgof"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rqlpn"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q3lhs"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dsblo"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yowld"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oos3a"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(600, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v272i"]
-atlas = ExtResource("7_qsrwn")
-region = Rect2(700, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r5rqg"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1v5b4"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yh55j"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l10fl"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_05wgd"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h5jbr"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q60xk"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(600, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_666d5"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(700, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kti4a"]
-atlas = ExtResource("8_lidbt")
-region = Rect2(800, 0, 100, 100)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_pfxno"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tpw1y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5aniq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wnmm1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sqleu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kd1n1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sroir")
-}],
-"loop": true,
-"name": &"kinght-second-attack",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.2,
-"texture": SubResource("AtlasTexture_jfjrp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1rxpj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aa01s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aprvr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8jnrw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rbkep")
-}],
-"loop": false,
-"name": &"knight-Attack",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fim2p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6irsf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kq0eg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ugu8i")
-}],
-"loop": true,
-"name": &"knight-Hurt",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lxb1m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fh8wp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bp45c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wh8tt")
-}],
-"loop": false,
-"name": &"knight-death",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dx71k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dsur2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j7a7f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1w7p4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7bg66")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6gsjs")
-}],
-"loop": true,
-"name": &"knight-idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qdrj4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ntgof")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rqlpn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q3lhs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dsblo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yowld")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oos3a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v272i")
-}],
-"loop": true,
-"name": &"knight-run",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r5rqg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1v5b4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yh55j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l10fl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_05wgd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h5jbr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q60xk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_666d5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kti4a")
-}],
-"loop": true,
-"name": &"knight-third-attack",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ij524"]
-size = Vector2(16.75, 18.125)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnmm1"]
+size = Vector2(61, 495.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gyy1v"]
 texture = ExtResource("1_ij524")
@@ -659,438 +287,11 @@ texture = ExtResource("1_ij524")
 [sub_resource type="TileSet" id="TileSet_iga7v"]
 sources/0 = SubResource("TileSetAtlasSource_gyy1v")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_kq0eg"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("22_8jnrw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_rbkep")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_fim2p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_6irsf")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_kd1n1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_sroir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_jfjrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1rxpj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aa01s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_aprvr")
-}],
-"loop": false,
-"name": &"piking",
-"speed": 5.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ugu8i"]
-radius = 12.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_wh8tt"]
-radius = 7.0
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dx71k"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("17_ugu8i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_lxb1m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_fh8wp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_bp45c")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_kd1n1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_sroir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_jfjrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1rxpj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aa01s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_aprvr")
-}],
-"loop": false,
-"name": &"piking",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_5aniq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("17_fim2p")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_kd1n1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_sroir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_jfjrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1rxpj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aa01s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_aprvr")
-}],
-"loop": false,
-"name": &"piking",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lidbt"]
-radius = 4.0
-height = 12.0
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_oos3a"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("28_rqlpn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_q3lhs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_dsblo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_yowld")
-}],
-"loop": true,
-"name": &"Cristal_idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_kd1n1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_sroir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_jfjrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1rxpj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aa01s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_aprvr")
-}],
-"loop": false,
-"name": &"piking",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v272i"]
-radius = 2.1213074
-height = 9.89949
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ntgof"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("29_dx71k")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_dsur2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_j7a7f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_1w7p4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_7bg66")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_6gsjs")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_kd1n1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_sroir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_jfjrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1rxpj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aa01s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_aprvr")
-}],
-"loop": false,
-"name": &"piking",
-"speed": 5.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_rqlpn"]
-radius = 5.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq0eg"]
-size = Vector2(944, 31)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g52ey"]
-atlas = ExtResource("36_1w7p4")
-region = Rect2(0, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mh3ks"]
-atlas = ExtResource("36_1w7p4")
-region = Rect2(34, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gq18v"]
-atlas = ExtResource("36_1w7p4")
-region = Rect2(68, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ddxy8"]
-atlas = ExtResource("36_1w7p4")
-region = Rect2(102, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p6h4q"]
-atlas = ExtResource("36_1w7p4")
-region = Rect2(136, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rrhlv"]
-atlas = ExtResource("42_dsblo")
-region = Rect2(0, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kbf78"]
-atlas = ExtResource("42_dsblo")
-region = Rect2(34, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0lv46"]
-atlas = ExtResource("42_dsblo")
-region = Rect2(68, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n5l2y"]
-atlas = ExtResource("42_dsblo")
-region = Rect2(102, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nino8"]
-atlas = ExtResource("38_6gsjs")
-region = Rect2(238, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_te2ie"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(0, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i2pcj"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(34, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lxy1q"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(68, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v08oe"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(102, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l8i5n"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(136, 0, 34, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_15atx"]
-atlas = ExtResource("39_qdrj4")
-region = Rect2(170, 0, 34, 28)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_0lv46"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g52ey")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mh3ks")
-}, {
-"duration": 1.01,
-"texture": SubResource("AtlasTexture_gq18v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ddxy8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p6h4q")
-}],
-"loop": false,
-"name": &"Attack",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rrhlv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kbf78")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0lv46")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n5l2y")
-}],
-"loop": false,
-"name": &"Damage",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nino8")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_te2ie")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i2pcj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lxy1q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v08oe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l8i5n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_15atx")
-}],
-"loop": true,
-"name": &"Run",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yowld"]
-size = Vector2(16, 15)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oos3a"]
 size = Vector2(13, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1v5b4"]
 size = Vector2(7, 666)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v272i"]
-size = Vector2(304, 243)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1v5b4"]
-radius = 8.0
-height = 32.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g7rrx"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0gbb6"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ivkgn"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5y1o0"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_35kj6"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qlerf"]
-atlas = ExtResource("49_r5rqg")
-region = Rect2(64, 32, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_bvm4o"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g7rrx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0gbb6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ivkgn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5y1o0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_35kj6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qlerf")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="Absolute-cinema-base1" type="Node2D"]
 
@@ -1099,7 +300,7 @@ light_mask = 2
 visibility_layer = 13
 z_index = 1
 position = Vector2(-1, 1)
-tile_map_data = PackedByteArray("AAD6/wEAAAAAAAAAAAD7/wEAAAABAAAAAAD8/wEAAAABAAAAAAD9/wEAAAABAAAAAAD+/wEAAAABAAAAAAD//wEAAAABAAAAAAAAAAEAAAABAAAAAAABAAEAAAABAAAAAAADAAEAAAABAAAAAAAFAAEAAAABAAAAAAAEAAEAAAABAAAAAAACAAEAAAABAAAAAAD7/wIAAAABAAEAAAD8/wIAAAABAAEAAAD9/wIAAAABAAEAAAD+/wIAAAABAAEAAAD//wIAAAABAAEAAAAAAAIAAAABAAEAAAABAAIAAAABAAEAAAACAAIAAAABAAEAAAADAAIAAAABAAEAAAAEAAIAAAABAAEAAAAFAAIAAAABAAEAAAD6/wIAAAAAAAEAAAD7/wMAAAABAAEAAAD8/wMAAAABAAEAAAD9/wMAAAABAAEAAAD+/wMAAAABAAEAAAD//wMAAAABAAEAAAAAAAMAAAABAAEAAAABAAMAAAABAAEAAAACAAMAAAABAAEAAAADAAMAAAABAAEAAAAEAAMAAAABAAEAAAAFAAMAAAABAAEAAAAFAAQAAAABAAEAAAAEAAQAAAABAAEAAAADAAQAAAABAAEAAAACAAQAAAABAAEAAAABAAQAAAABAAEAAAAAAAQAAAABAAEAAAD//wQAAAABAAEAAAD9/wQAAAABAAEAAAD8/wQAAAABAAEAAAD7/wQAAAABAAEAAAD7/wUAAAABAAEAAAD8/wUAAAABAAEAAAD9/wUAAAABAAEAAAD+/wUAAAABAAEAAAD//wUAAAABAAEAAAAAAAUAAAABAAEAAAABAAUAAAABAAEAAAACAAUAAAABAAEAAAADAAUAAAABAAEAAAAEAAUAAAABAAEAAAAFAAUAAAABAAEAAAAFAAYAAAABAAEAAAAEAAYAAAABAAEAAAADAAYAAAABAAEAAAACAAYAAAABAAEAAAABAAYAAAABAAEAAAAAAAYAAAABAAEAAAD//wYAAAABAAEAAAD+/wYAAAABAAEAAAD9/wYAAAABAAEAAAD8/wYAAAABAAEAAAD7/wYAAAABAAEAAAD7/wcAAAABAAEAAAD8/wcAAAABAAEAAAD9/wcAAAABAAEAAAD+/wcAAAABAAEAAAD//wcAAAABAAEAAAAAAAcAAAABAAEAAAABAAcAAAABAAEAAAACAAcAAAABAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAD6/wMAAAAAAAEAAAD6/wQAAAAAAAEAAAD6/wUAAAAAAAEAAAD6/wYAAAAAAAEAAAD6/wcAAAAAAAEAAAAHAAAAAAAAAAEAAAAGAAEAAAABAAAAAAAHAAEAAAABAAAAAAAGAAIAAAABAAEAAAAGAAMAAAABAAEAAAAGAAQAAAABAAEAAAAGAAUAAAABAAEAAAAGAAYAAAABAAEAAAAGAAcAAAABAAEAAAAHAAIAAAABAAEAAAAHAAMAAAABAAEAAAAHAAQAAAABAAEAAAAHAAUAAAABAAEAAAAHAAYAAAABAAEAAAAHAAcAAAABAAEAAAAIAAEAAAABAAAAAAAIAAIAAAABAAEAAAAIAAMAAAABAAEAAAAIAAQAAAABAAEAAAAIAAUAAAABAAEAAAAIAAYAAAABAAEAAAAIAAcAAAABAAEAAAAHAP//AAAAAAAAAAAIAP//AAABAAAAAAAJAP//AAABAAAAAAAIAAAAAAABAAEAAAAJAAAAAAABAAEAAAAJAAEAAAABAAEAAAAKAAIAAAABAAEAAAAKAAMAAAABAAEAAAALAAMAAAABAAEAAAALAAQAAAABAAEAAAALAAUAAAABAAEAAAALAAYAAAABAAEAAAAMAAIAAAABAAEAAAAMAAMAAAABAAEAAAAMAAQAAAABAAEAAAAMAAUAAAABAAEAAAAMAAYAAAABAAEAAAAJAAIAAAABAAEAAAAJAAMAAAABAAEAAAAJAAQAAAABAAEAAAAJAAUAAAABAAEAAAAJAAYAAAABAAEAAAAKAAQAAAABAAEAAAAKAAUAAAABAAEAAAAKAAYAAAABAAEAAAAJAAcAAAABAAEAAAAKAAcAAAABAAEAAAALAAcAAAABAAEAAAAMAAcAAAABAAEAAAAUAP//AAABAAAAAAAVAP//AAABAAAAAAAWAP//AAABAAAAAAAXAP//AAABAAAAAAAYAP//AAABAAAAAAAZAP//AAABAAAAAAAaAP//AAABAAAAAAAbAP//AAACAAAAAAAbAAAAAAACAAEAAAAdAAEAAAABAAAAAAAeAAEAAAABAAAAAAAfAAEAAAABAAAAAAAgAAEAAAACAAAAAAAgAAMAAAACAAEAAAAgAAQAAAACAAEAAAAgAAUAAAACAAEAAAAgAAYAAAACAAEAAAAiAAMAAAAAAAYAAAAjAAMAAAABAAYAAAAkAAMAAAABAAYAAAAlAAMAAAACAAYAAAANAAIAAAABAAEAAAANAAMAAAABAAEAAAANAAQAAAABAAEAAAANAAUAAAABAAEAAAANAAYAAAABAAEAAAANAAcAAAABAAEAAAAOAAIAAAABAAEAAAAOAAMAAAABAAEAAAAOAAQAAAABAAEAAAAOAAUAAAABAAEAAAAOAAYAAAABAAEAAAAOAAcAAAABAAEAAAAPAAIAAAABAAEAAAAPAAMAAAABAAEAAAAPAAQAAAABAAEAAAAPAAUAAAABAAEAAAAPAAYAAAABAAEAAAAPAAcAAAABAAEAAAAQAAIAAAABAAEAAAAQAAMAAAABAAEAAAAQAAQAAAABAAEAAAAQAAUAAAABAAEAAAAQAAYAAAABAAEAAAAQAAcAAAABAAEAAAARAAMAAAABAAEAAAARAAQAAAABAAEAAAARAAUAAAABAAEAAAARAAYAAAABAAEAAAARAAcAAAABAAEAAAASAAIAAAABAAEAAAASAAMAAAABAAEAAAASAAQAAAABAAEAAAASAAUAAAABAAEAAAASAAYAAAABAAEAAAASAAcAAAABAAEAAAATAAAAAAAAAAEAAAATAAIAAAABAAEAAAATAAMAAAABAAEAAAATAAQAAAABAAEAAAATAAUAAAABAAEAAAATAAYAAAABAAEAAAATAAcAAAABAAEAAAAUAAAAAAABAAEAAAAUAAEAAAABAAEAAAAUAAIAAAABAAEAAAAUAAMAAAABAAEAAAAUAAUAAAABAAEAAAAUAAYAAAABAAEAAAAUAAcAAAABAAEAAAAVAAAAAAABAAEAAAAVAAEAAAABAAEAAAAVAAIAAAABAAEAAAAVAAMAAAABAAEAAAAVAAQAAAABAAEAAAAVAAUAAAABAAEAAAAVAAYAAAABAAEAAAAVAAcAAAABAAEAAAAWAAAAAAABAAEAAAAWAAEAAAABAAEAAAAWAAIAAAABAAEAAAAWAAMAAAABAAEAAAAWAAQAAAABAAEAAAAWAAUAAAABAAEAAAAWAAYAAAABAAEAAAAWAAcAAAABAAEAAAAXAAAAAAABAAEAAAAXAAEAAAABAAEAAAAXAAIAAAABAAEAAAAXAAMAAAABAAEAAAAXAAQAAAABAAEAAAAXAAUAAAABAAEAAAAXAAYAAAABAAEAAAAXAAcAAAABAAEAAAAYAAAAAAABAAEAAAAYAAEAAAABAAEAAAAYAAIAAAABAAEAAAAYAAMAAAABAAEAAAAYAAQAAAABAAEAAAAYAAUAAAABAAEAAAAYAAYAAAABAAEAAAAYAAcAAAABAAEAAAAZAAAAAAABAAEAAAAZAAEAAAABAAEAAAAZAAIAAAABAAEAAAAZAAMAAAABAAEAAAAZAAQAAAABAAEAAAAZAAUAAAABAAEAAAAZAAYAAAABAAEAAAAZAAcAAAABAAEAAAAaAAAAAAABAAEAAAAaAAEAAAABAAEAAAAaAAIAAAABAAEAAAAaAAMAAAABAAEAAAAaAAQAAAABAAEAAAAaAAUAAAABAAEAAAAaAAYAAAABAAEAAAAaAAcAAAABAAEAAAAbAAQAAAABAAEAAAAbAAUAAAABAAEAAAAbAAYAAAABAAEAAAAbAAcAAAABAAEAAAAcAAQAAAABAAEAAAAcAAUAAAABAAEAAAAcAAYAAAABAAEAAAAcAAcAAAABAAEAAAAdAAQAAAABAAEAAAAdAAUAAAABAAEAAAAdAAYAAAABAAEAAAAdAAcAAAABAAEAAAAeAAQAAAABAAEAAAAeAAUAAAABAAEAAAAeAAYAAAABAAEAAAAeAAcAAAABAAEAAAAfAAQAAAABAAEAAAAfAAUAAAABAAEAAAAfAAYAAAABAAEAAAAfAAcAAAABAAEAAAAcAAIAAAABAAEAAAAcAAMAAAABAAEAAAAdAAIAAAABAAEAAAAdAAMAAAABAAEAAAAeAAIAAAABAAEAAAAeAAMAAAABAAEAAAAfAAIAAAABAAEAAAAfAAMAAAABAAEAAAALAAIAAAABAAEAAAD+/wQAAAABAAEAAAARAAIAAAABAAEAAAAUAAQAAAABAAEAAAAgAAcAAAACAAEAAAAPAPv/AQAAAAYAAAAQAPv/AQABAAYAAAAgAAIAAAACAAEAAAALAP3/AAADAAAAAAAMAP3/AAAEAAAAAAANAP3/AAAFAAAAAAAcAAEAAAABAAAAAAAbAAEAAAABAAAAAAAbAAIAAAABAAEAAAAbAAMAAAABAAEAAAD7/wgAAAABAAEAAAD8/wgAAAABAAEAAAD9/wgAAAABAAEAAAD+/wgAAAABAAEAAAD//wgAAAABAAEAAAAAAAgAAAABAAEAAAABAAgAAAABAAEAAAACAAgAAAABAAEAAAADAAgAAAABAAEAAAAEAAgAAAABAAEAAAAFAAgAAAABAAEAAAAGAAgAAAABAAEAAAAHAAgAAAABAAEAAAAIAAgAAAABAAEAAAAJAAgAAAABAAEAAAAKAAgAAAABAAEAAAALAAgAAAABAAEAAAAMAAgAAAABAAEAAAANAAgAAAABAAEAAAAOAAgAAAABAAEAAAAPAAgAAAABAAEAAAAQAAgAAAABAAEAAAARAAgAAAABAAEAAAASAAgAAAABAAEAAAATAAgAAAABAAEAAAAUAAgAAAABAAEAAAAVAAgAAAABAAEAAAAWAAgAAAABAAEAAAAXAAgAAAABAAEAAAAYAAgAAAABAAEAAAAZAAgAAAABAAEAAAAaAAgAAAABAAEAAAAbAAgAAAABAAEAAAAcAAgAAAABAAEAAAAdAAgAAAABAAEAAAAeAAgAAAABAAEAAAAfAAgAAAABAAEAAAAfAAkAAAABAAEAAAAeAAkAAAABAAEAAAAdAAkAAAABAAEAAAAcAAkAAAABAAEAAAAbAAkAAAABAAEAAAAaAAkAAAABAAEAAAAZAAkAAAABAAEAAAAYAAkAAAABAAEAAAAXAAkAAAABAAEAAAAWAAkAAAABAAEAAAAVAAkAAAABAAEAAAAUAAkAAAABAAEAAAATAAkAAAABAAEAAAASAAkAAAABAAEAAAARAAkAAAABAAEAAAAQAAkAAAABAAEAAAAPAAkAAAABAAEAAAAOAAkAAAABAAEAAAANAAkAAAABAAEAAAAMAAkAAAABAAEAAAALAAkAAAABAAEAAAAKAAkAAAABAAEAAAAJAAkAAAABAAEAAAAIAAkAAAABAAEAAAAHAAkAAAABAAEAAAAGAAkAAAABAAEAAAAFAAkAAAABAAEAAAAEAAkAAAABAAEAAAADAAkAAAABAAEAAAACAAkAAAABAAEAAAABAAkAAAABAAEAAAAAAAkAAAABAAEAAAD//wkAAAABAAEAAAD+/wkAAAABAAEAAAD9/wkAAAABAAEAAAD8/wkAAAABAAEAAAD7/wkAAAABAAEAAAD7/woAAAABAAEAAAD8/woAAAABAAEAAAD9/woAAAABAAEAAAD9/wsAAAABAAEAAAD+/wsAAAABAAEAAAD//wsAAAABAAEAAAAAAAsAAAABAAEAAAAAAAoAAAABAAEAAAABAAoAAAABAAEAAAACAAoAAAABAAEAAAADAAoAAAABAAEAAAAEAAoAAAABAAEAAAAFAAoAAAABAAEAAAD+/woAAAABAAEAAAD//woAAAABAAEAAAAGAAoAAAABAAEAAAAHAAoAAAABAAEAAAAIAAoAAAABAAEAAAAJAAoAAAABAAEAAAAKAAoAAAABAAEAAAANAAoAAAABAAEAAAAMAAoAAAABAAEAAAALAAoAAAABAAEAAAAOAAoAAAABAAEAAAAPAAoAAAABAAEAAAAQAAoAAAABAAEAAAARAAoAAAABAAEAAAASAAoAAAABAAEAAAATAAoAAAABAAEAAAAUAAoAAAABAAEAAAAVAAoAAAABAAEAAAAWAAoAAAABAAEAAAAXAAoAAAABAAEAAAAYAAoAAAABAAEAAAAZAAoAAAABAAEAAAAaAAoAAAABAAEAAAAbAAoAAAABAAEAAAAcAAoAAAABAAEAAAAdAAoAAAABAAEAAAAeAAoAAAABAAEAAAAfAAoAAAABAAEAAAAfAAsAAAABAAEAAAAeAAsAAAABAAEAAAAdAAsAAAABAAEAAAAcAAsAAAABAAEAAAAbAAwAAAABAAEAAAAaAAwAAAABAAEAAAAZAAwAAAABAAEAAAAYAAwAAAABAAEAAAAXAAwAAAABAAEAAAAWAAwAAAABAAEAAAAVAAwAAAABAAEAAAAUAAwAAAABAAEAAAATAAwAAAABAAEAAAASAAwAAAABAAEAAAARAAwAAAABAAEAAAAQAAwAAAABAAEAAAAPAAwAAAABAAEAAAAOAAsAAAABAAEAAAANAAsAAAABAAEAAAAMAAsAAAABAAEAAAALAAsAAAABAAEAAAAKAAsAAAABAAEAAAAJAAsAAAABAAEAAAAIAAsAAAABAAEAAAAHAAsAAAABAAEAAAAGAAsAAAABAAEAAAAFAAsAAAABAAEAAAAEAAsAAAABAAEAAAADAAsAAAABAAEAAAACAAsAAAABAAEAAAABAAsAAAABAAEAAAAaAAsAAAABAAEAAAAbAAsAAAABAAEAAAAZAAsAAAABAAEAAAAYAAsAAAABAAEAAAAXAAsAAAABAAEAAAAWAAsAAAABAAEAAAAVAAsAAAABAAEAAAAUAAsAAAABAAEAAAATAAsAAAABAAEAAAASAAsAAAABAAEAAAARAAsAAAABAAEAAAAQAAsAAAABAAEAAAAPAAsAAAABAAEAAAD8/wsAAAABAAEAAAD7/wsAAAABAAEAAAD7/wwAAAABAAEAAAD8/wwAAAABAAEAAAD9/wwAAAABAAEAAAD+/wwAAAABAAEAAAD//wwAAAABAAEAAAAAAAwAAAABAAEAAAABAAwAAAABAAEAAAACAAwAAAABAAEAAAADAAwAAAABAAEAAAAEAAwAAAABAAEAAAAFAAwAAAABAAEAAAAGAAwAAAABAAEAAAAHAAwAAAABAAEAAAAIAAwAAAABAAEAAAAJAAwAAAABAAEAAAAKAAwAAAABAAEAAAALAAwAAAABAAEAAAAMAAwAAAABAAEAAAANAAwAAAABAAEAAAAOAAwAAAABAAEAAAAcAAwAAAABAAEAAAAdAAwAAAABAAEAAAAeAAwAAAABAAEAAAAfAAwAAAABAAEAAAAfAA0AAAABAAEAAAAeAA0AAAABAAEAAAAdAA0AAAABAAEAAAAcAA0AAAABAAEAAAAbAA0AAAABAAEAAAAaAA0AAAABAAEAAAAZAA0AAAABAAEAAAAYAA0AAAABAAEAAAAXAA0AAAABAAEAAAAWAA0AAAABAAEAAAAVAA0AAAABAAEAAAAUAA0AAAABAAEAAAATAA0AAAABAAEAAAASAA0AAAABAAEAAAARAA0AAAABAAEAAAAQAA0AAAABAAEAAAAPAA0AAAABAAEAAAAOAA0AAAABAAEAAAANAA0AAAABAAEAAAAMAA0AAAABAAEAAAALAA0AAAABAAEAAAAKAA0AAAABAAEAAAAJAA0AAAABAAEAAAAIAA0AAAABAAEAAAAHAA0AAAABAAEAAAAGAA0AAAABAAEAAAAFAA0AAAABAAEAAAAEAA0AAAABAAEAAAADAA0AAAABAAEAAAACAA0AAAABAAEAAAABAA0AAAABAAEAAAAAAA0AAAABAAEAAAD//w0AAAABAAEAAAD+/w0AAAABAAEAAAD9/w0AAAABAAEAAAD8/w0AAAABAAEAAAD7/w0AAAABAAEAAAD7/w4AAAABAAEAAAD8/w4AAAABAAEAAAD9/w4AAAABAAEAAAD+/w4AAAABAAEAAAD//w4AAAABAAEAAAAAAA4AAAABAAEAAAABAA4AAAABAAEAAAACAA4AAAABAAEAAAADAA4AAAABAAEAAAAEAA4AAAABAAEAAAAFAA4AAAABAAEAAAAGAA4AAAABAAEAAAAHAA4AAAABAAEAAAAIAA4AAAABAAEAAAAJAA4AAAABAAEAAAAKAA4AAAABAAEAAAALAA4AAAABAAEAAAAMAA4AAAABAAEAAAANAA4AAAABAAEAAAAOAA4AAAABAAEAAAAPAA4AAAABAAEAAAAQAA4AAAABAAEAAAARAA4AAAABAAEAAAASAA4AAAABAAEAAAATAA4AAAABAAEAAAAfAA4AAAABAAEAAAAeAA4AAAABAAEAAAAdAA4AAAABAAEAAAAcAA4AAAABAAEAAAAbAA4AAAABAAEAAAAaAA4AAAABAAEAAAAZAA4AAAABAAEAAAAYAA4AAAABAAEAAAAXAA4AAAABAAEAAAAWAA4AAAABAAEAAAAVAA4AAAABAAEAAAAUAA4AAAABAAEAAAALAA8AAAABAAEAAAAKAA8AAAABAAEAAAAJAA8AAAABAAEAAAAIAA8AAAABAAEAAAAHAA8AAAABAAEAAAAGAA8AAAABAAEAAAAFAA8AAAABAAEAAAAEAA8AAAABAAEAAAADAA8AAAABAAEAAAACAA8AAAABAAEAAAABAA8AAAABAAEAAAAAAA8AAAABAAEAAAD//w8AAAABAAEAAAD+/w8AAAABAAEAAAD9/w8AAAABAAEAAAD8/w8AAAABAAEAAAD7/w8AAAABAAEAAAD//xAAAAABAAEAAAAAABAAAAABAAEAAAABABAAAAABAAEAAAACABAAAAABAAEAAAADABAAAAABAAEAAAAEABAAAAABAAEAAAAFABAAAAABAAEAAAAGABAAAAABAAEAAAAHABAAAAABAAEAAAAIABAAAAABAAEAAAAJABAAAAABAAEAAAAMAA8AAAABAAEAAAANAA8AAAABAAEAAAAOAA8AAAABAAEAAAAPAA8AAAABAAEAAAASAA8AAAABAAEAAAATAA8AAAABAAEAAAAUAA8AAAABAAEAAAAVAA8AAAABAAEAAAAWAA8AAAABAAEAAAAXAA8AAAABAAEAAAAYAA8AAAABAAEAAAAZAA8AAAABAAEAAAAaAA8AAAABAAEAAAAbAA8AAAABAAEAAAAcAA8AAAABAAEAAAAdAA8AAAABAAEAAAAeAA8AAAABAAEAAAAfAA8AAAABAAEAAAARAA8AAAABAAEAAAAQAA8AAAABAAEAAAASABAAAAABAAEAAAATABAAAAABAAEAAAAUABAAAAABAAEAAAAVABAAAAABAAEAAAAWABAAAAABAAEAAAAXABAAAAABAAEAAAAYABAAAAABAAEAAAAZABAAAAABAAEAAAAaABAAAAABAAEAAAAbABAAAAABAAEAAAAcABAAAAABAAEAAAAdABAAAAABAAEAAAAeABAAAAABAAEAAAAfABAAAAABAAEAAAAOABAAAAABAAEAAAANABAAAAABAAEAAAAMABAAAAABAAEAAAALABAAAAABAAEAAAAKABAAAAABAAEAAAAPABAAAAABAAEAAAAQABAAAAABAAEAAAARABAAAAABAAEAAAD+/xAAAAABAAEAAAD9/xAAAAABAAEAAAD8/xAAAAABAAEAAAD7/xAAAAABAAEAAAD6/wgAAAAAAAEAAAD6/wkAAAAAAAEAAAD6/woAAAAAAAEAAAD6/wsAAAAAAAEAAAD6/wwAAAAAAAEAAAD6/w0AAAAAAAEAAAD6/w4AAAAAAAEAAAD6/w8AAAAAAAEAAAD6/xAAAAAAAAEAAAD6/xEAAAAAAAIAAAAgAAgAAAACAAEAAAAgAAkAAAACAAEAAAAgAAoAAAACAAEAAAAgAAsAAAACAAEAAAAgAAwAAAACAAEAAAAgAA0AAAACAAEAAAAgAA4AAAACAAEAAAAgAA8AAAACAAEAAAAgABAAAAACAAEAAAAgABEAAAACAAIAAAAfABEAAAABAAIAAAAeABEAAAABAAIAAAAdABEAAAABAAIAAAAcABEAAAABAAIAAAAbABEAAAABAAIAAAAaABEAAAABAAIAAAAZABEAAAABAAIAAAAYABEAAAABAAIAAAAXABEAAAABAAIAAAAWABEAAAABAAIAAAAVABEAAAABAAIAAAAUABEAAAABAAIAAAATABEAAAABAAIAAAASABEAAAABAAIAAAARABEAAAABAAIAAAAQABEAAAABAAIAAAAPABEAAAABAAIAAAAOABEAAAABAAIAAAANABEAAAABAAIAAAAMABEAAAABAAIAAAALABEAAAABAAIAAAAKABEAAAABAAIAAAAJABEAAAABAAIAAAAIABEAAAABAAIAAAAHABEAAAABAAIAAAAGABEAAAABAAIAAAAFABEAAAABAAIAAAAEABEAAAABAAIAAAADABEAAAABAAIAAAACABEAAAABAAIAAAABABEAAAABAAIAAAAAABEAAAABAAIAAAD//xEAAAABAAIAAAD+/xEAAAABAAIAAAD9/xEAAAABAAIAAAD8/xEAAAABAAIAAAD7/xEAAAABAAIAAAApAAYAAAAAAAAAAAAqAAYAAAABAAAAAAArAAYAAAABAAAAAAAsAAYAAAABAAAAAAAtAAYAAAABAAAAAAAxAAYAAAABAAAAAAAyAAYAAAACAAAAAAAyAAcAAAACAAEAAAAyAAgAAAACAAEAAAAyAAkAAAACAAEAAAAyAAoAAAACAAEAAAAyAAsAAAACAAEAAAAyAAwAAAACAAEAAAAyAA0AAAACAAEAAAAyAA4AAAACAAEAAAAyAA8AAAACAAEAAAAyABAAAAACAAEAAAAyABEAAAACAAEAAAAyABIAAAACAAEAAAApAAcAAAAAAAEAAAApAAgAAAAAAAEAAAApAAkAAAAAAAEAAAApAAoAAAAAAAEAAAApAAsAAAAAAAEAAAApAAwAAAAAAAEAAAApAA8AAAAAAAEAAAApABAAAAAAAAEAAAApABEAAAAAAAEAAAApABIAAAAAAAEAAAAyABMAAAACAAIAAAAxABMAAAABAAIAAAAwABMAAAABAAIAAAAvABMAAAABAAIAAAAuABMAAAABAAIAAAAtABMAAAABAAIAAAAsABMAAAABAAIAAAArABMAAAABAAIAAAAqABMAAAABAAIAAAApABMAAAAAAAIAAAAxABIAAAABAAEAAAAwABIAAAABAAEAAAAvABIAAAABAAEAAAAuABIAAAABAAEAAAAtABIAAAABAAEAAAAsABIAAAABAAEAAAArABIAAAABAAEAAAAqABIAAAABAAEAAAAqABEAAAABAAEAAAAqABAAAAABAAEAAAAqAA8AAAABAAEAAAAqAA4AAAABAAEAAAAqAAwAAAABAAEAAAAqAAsAAAABAAEAAAAqAAoAAAABAAEAAAAqAAkAAAABAAEAAAAqAAgAAAABAAEAAAAqAAcAAAABAAEAAAArAAcAAAABAAEAAAAsAAcAAAABAAEAAAAtAAcAAAABAAEAAAAxAAcAAAABAAEAAAAxAAgAAAABAAEAAAAxAAkAAAABAAEAAAAxAAoAAAABAAEAAAAxAAsAAAABAAEAAAAxAAwAAAABAAEAAAAxAA0AAAABAAEAAAAxAA4AAAABAAEAAAAxAA8AAAABAAEAAAAxABAAAAABAAEAAAAxABEAAAABAAEAAAAwABEAAAABAAEAAAAvABEAAAABAAEAAAAuABEAAAABAAEAAAAtABEAAAABAAEAAAAsABEAAAABAAEAAAArABEAAAABAAEAAAArABAAAAABAAEAAAArAA8AAAABAAEAAAArAA0AAAABAAEAAAArAAwAAAABAAEAAAArAAkAAAABAAEAAAArAAgAAAABAAEAAAArAAoAAAABAAEAAAArAAsAAAABAAEAAAAsAA0AAAABAAEAAAArAA4AAAABAAEAAAAsAA4AAAABAAEAAAAsAA8AAAABAAEAAAAtAA8AAAABAAEAAAAsABAAAAABAAEAAAAtABAAAAABAAEAAAAuABAAAAABAAEAAAAvABAAAAABAAEAAAAwABAAAAABAAEAAAAvAA8AAAABAAEAAAAuAA8AAAABAAEAAAAwAA8AAAABAAEAAAAwAA4AAAABAAEAAAAvAA4AAAABAAEAAAAwAA0AAAADAAEAAAAvAA0AAAABAAEAAAAuAA4AAAABAAEAAAAtAA4AAAABAAEAAAAtAA0AAAABAAEAAAAuAA0AAAABAAEAAAAvAAwAAAABAAEAAAAuAAwAAAABAAEAAAAtAAwAAAABAAEAAAAsAAwAAAABAAEAAAAwAAwAAAABAAEAAAAwAAsAAAABAAEAAAAwAAoAAAABAAEAAAAvAAoAAAABAAEAAAAuAAoAAAABAAEAAAAtAAoAAAABAAEAAAAsAAoAAAABAAEAAAAsAAsAAAABAAEAAAAtAAsAAAABAAEAAAAuAAsAAAABAAEAAAAvAAsAAAABAAEAAAAwAAkAAAABAAEAAAAvAAkAAAABAAEAAAAuAAkAAAABAAEAAAAtAAkAAAABAAEAAAAsAAkAAAAEAAEAAAAsAAgAAAABAAEAAAAtAAgAAAABAAEAAAAuAAgAAAABAAEAAAAwAAgAAAABAAEAAAAvAAgAAAABAAEAAAAqAAUAAAAAAAcAAAArAAUAAAABAAcAAAAsAAUAAAABAAcAAAAsAAQAAAABAAcAAAArAAQAAAABAAcAAAAsAAMAAAABAAcAAAApAA0AAAAAAAEAAAApAA4AAAAAAAEAAAAqAA0AAAABAAEAAABjAAwAAAAFAAYAAAAjAAQAAAAEAAMAAAAkAAQAAAAEAAMAAAAkAAUAAAAEAAMAAAAjAAUAAAAEAAMAAAAjAAYAAAAEAAMAAAAkAAYAAAAEAAMAAAAkAAcAAAAEAAMAAAAjAAcAAAAEAAMAAAAjAAgAAAAEAAMAAAAkAAgAAAAEAAMAAAAkAAkAAAAEAAMAAAAkAAoAAAAEAAMAAAAkAAsAAAAEAAMAAAAkAAwAAAAEAAMAAAAjAAkAAAAEAAMAAAAjAAoAAAAEAAMAAAAjAAsAAAAEAAMAAAAkAA0AAAAEAAMAAAAkAA4AAAAEAAMAAAAkAA8AAAAEAAMAAAAkABAAAAAEAAMAAAAkABEAAAAEAAMAAAAkABIAAAAEAAMAAAAkABMAAAAEAAMAAAAkABQAAAAEAAMAAAAkABUAAAAEAAMAAAAkABYAAAAEAAMAAAAjAAwAAAAEAAMAAAAjAA0AAAAEAAMAAAAjAA4AAAAEAAMAAAAjAA8AAAAEAAMAAAAjABAAAAAEAAMAAAAjABEAAAAEAAMAAAAjABIAAAAEAAMAAAAjABMAAAAEAAMAAAAjABQAAAAEAAMAAAAjABUAAAAEAAMAAAAjABYAAAAEAAMAAAAkABcAAAAEAAQAAAAjABcAAAAEAAQAAAAiAAQAAAADAAQAAAAlAAQAAAAFAAQAAAAKAP//AAABAAAAAAATAP//AAAAAAAAAAALAAEAAAABAAAAAAAMAAEAAAABAAAAAAANAAEAAAABAAAAAAAOAAEAAAABAAAAAAAPAAEAAAABAAAAAAAQAAEAAAABAAAAAAARAAEAAAABAAAAAAASAAEAAAABAAAAAAATAAEAAAABAAAAAAALAP//AAACAAAAAAALAAAAAAACAAEAAAAKAAAAAAABAAEAAAAKAAEAAAABAAEAAAASAAAAAAABAAcAAAAvAAYAAAABAAAAAAAuAAYAAAABAAAAAAAuAAcAAAABAAEAAAAvAAcAAAABAAEAAAAwAAcAAAABAAEAAAAwAAYAAAABAAAAAAARAPv/AAABAAYAAAASAPv/AAABAAYAAAATAPv/AAABAAYAAAAUAPv/AAABAAYAAAAVAPv/AAACAAYAAAA0ABMAAAADAAIAAAA1ABMAAAAEAAIAAAA2ABMAAAAEAAIAAAA3ABMAAAAEAAIAAAA4ABMAAAAEAAIAAAA5ABMAAAAEAAIAAAA6ABMAAAAEAAIAAAA7ABMAAAAEAAIAAAA8ABMAAAAEAAIAAAA9ABMAAAAEAAIAAAA+ABMAAAAEAAIAAAA/ABMAAAAEAAIAAABAABMAAAAEAAIAAABBABMAAAAEAAIAAABCABMAAAAEAAIAAABDABMAAAAEAAIAAABEABMAAAAEAAIAAABFABMAAAAEAAIAAABGABMAAAAEAAIAAABHABMAAAAEAAIAAABIABMAAAAEAAIAAABJABMAAAAEAAIAAABKABMAAAAEAAIAAABLABMAAAAEAAIAAABMABMAAAAEAAIAAABNABMAAAAEAAIAAABOABMAAAAEAAIAAABPABMAAAAEAAIAAABQABMAAAAEAAIAAABRABMAAAAEAAIAAABSABMAAAAFAAQAAABTABMAAAAFAAQAAABUABMAAAAFAAQAAABVABMAAAAFAAQAAABWABMAAAAFAAQAAABXABMAAAAFAAQAAABYABMAAAAFAAQAAABZABMAAAAFAAQAAABaABMAAAAFAAQAAABbABMAAAAFAAQAAABcABMAAAAFAAQAAABdABMAAAAFAAQAAABeABMAAAAFAAQAAABfABMAAAAFAAQAAABgABMAAAAFAAQAAABhABMAAAAFAAQAAABiABMAAAAFAAQAAABjABMAAAAFAAQAAABkABMAAAAFAAQAAABlABMAAAAFAAQAAABmABMAAAAFAAQAAABoABMAAAAFAAQAAABnABMAAAAFAAQAAABpABMAAAAFAAQAAABqABMAAAAFAAQAAABrABMAAAAFAAQAAABsABMAAAAFAAQAAABtABMAAAAFAAQAAABuABMAAAAFAAQAAABvABMAAAAFAAQAAABwABMAAAAFAAQAAABxABMAAAAFAAQAAAByABMAAAAFAAIAAAByABQAAAAFAAQAAAA1ABQAAAAEAAQAAAA2ABQAAAAEAAQAAAA3ABQAAAAEAAQAAAA4ABQAAAAEAAQAAAA5ABQAAAAEAAQAAAA6ABQAAAAEAAQAAAA7ABQAAAAEAAQAAAA8ABQAAAAEAAQAAAA9ABQAAAAEAAQAAAA+ABQAAAAEAAQAAAA/ABQAAAAEAAQAAABAABQAAAAEAAQAAABBABQAAAAEAAQAAABCABQAAAAEAAQAAABDABQAAAAEAAQAAABEABQAAAAEAAQAAABFABQAAAAEAAQAAABGABQAAAAEAAQAAABHABQAAAAEAAQAAABIABQAAAAEAAQAAABJABQAAAAEAAQAAABKABQAAAAEAAQAAABLABQAAAAEAAQAAABMABQAAAAEAAQAAABNABQAAAAEAAQAAABOABQAAAAEAAQAAABPABQAAAAEAAQAAABQABQAAAAEAAQAAABRABQAAAAEAAQAAABSABQAAAAEAAQAAABTABQAAAAEAAQAAABUABQAAAAEAAQAAABVABQAAAAEAAQAAABWABQAAAAEAAQAAABXABQAAAAEAAQAAABYABQAAAAEAAQAAABZABQAAAAEAAQAAABaABQAAAAEAAQAAABbABQAAAAEAAQAAABcABQAAAAEAAQAAABdABQAAAAEAAQAAABeABQAAAAEAAQAAABfABQAAAAEAAQAAABgABQAAAAEAAQAAABhABQAAAAEAAQAAABiABQAAAAEAAQAAABjABQAAAAEAAQAAABkABQAAAAEAAQAAABlABQAAAAEAAQAAABmABQAAAAEAAQAAABnABQAAAAEAAQAAABoABQAAAAEAAQAAABpABQAAAAEAAQAAABqABQAAAAEAAQAAABrABQAAAAEAAQAAABsABQAAAAEAAQAAABtABQAAAAEAAQAAABuABQAAAAEAAQAAABvABQAAAAEAAQAAABwABQAAAAEAAQAAABxABQAAAAEAAQAAAA0ABQAAAADAAQAAAA=")
+tile_map_data = PackedByteArray("AAD6/wEAAAAAAAAAAAD7/wEAAAABAAAAAAD8/wEAAAABAAAAAAD9/wEAAAABAAAAAAD+/wEAAAABAAAAAAD//wEAAAABAAAAAAAAAAEAAAABAAAAAAABAAEAAAABAAAAAAADAAEAAAABAAAAAAAFAAEAAAABAAAAAAAEAAEAAAABAAAAAAACAAEAAAABAAAAAAD7/wIAAAABAAEAAAD8/wIAAAABAAEAAAD9/wIAAAABAAEAAAD+/wIAAAABAAEAAAD//wIAAAABAAEAAAAAAAIAAAABAAEAAAABAAIAAAABAAEAAAACAAIAAAABAAEAAAADAAIAAAABAAEAAAAEAAIAAAABAAEAAAAFAAIAAAABAAEAAAD6/wIAAAAAAAEAAAD7/wMAAAABAAEAAAD8/wMAAAABAAEAAAD9/wMAAAABAAEAAAD+/wMAAAABAAEAAAD//wMAAAABAAEAAAAAAAMAAAABAAEAAAABAAMAAAABAAEAAAACAAMAAAABAAEAAAADAAMAAAABAAEAAAAEAAMAAAABAAEAAAAFAAMAAAABAAEAAAAFAAQAAAABAAEAAAAEAAQAAAABAAEAAAADAAQAAAABAAEAAAACAAQAAAABAAEAAAABAAQAAAABAAEAAAAAAAQAAAABAAEAAAD//wQAAAABAAEAAAD9/wQAAAABAAEAAAD8/wQAAAABAAEAAAD7/wQAAAABAAEAAAD7/wUAAAABAAEAAAD8/wUAAAABAAEAAAD9/wUAAAABAAEAAAD+/wUAAAABAAEAAAD//wUAAAABAAEAAAAAAAUAAAABAAEAAAABAAUAAAABAAEAAAACAAUAAAABAAEAAAADAAUAAAABAAEAAAAEAAUAAAABAAEAAAAFAAUAAAABAAEAAAAFAAYAAAABAAEAAAAEAAYAAAABAAEAAAADAAYAAAABAAEAAAACAAYAAAABAAEAAAABAAYAAAABAAEAAAAAAAYAAAABAAEAAAD//wYAAAABAAEAAAD+/wYAAAABAAEAAAD9/wYAAAABAAEAAAD8/wYAAAABAAEAAAD7/wYAAAABAAEAAAD7/wcAAAABAAEAAAD8/wcAAAABAAEAAAD9/wcAAAABAAEAAAD+/wcAAAABAAEAAAD//wcAAAABAAEAAAAAAAcAAAABAAEAAAABAAcAAAABAAEAAAACAAcAAAABAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAD6/wMAAAAAAAEAAAD6/wQAAAAAAAEAAAD6/wUAAAAAAAEAAAD6/wYAAAAAAAEAAAD6/wcAAAAAAAEAAAAHAAAAAAAAAAEAAAAGAAEAAAABAAAAAAAHAAEAAAABAAAAAAAGAAIAAAABAAEAAAAGAAMAAAABAAEAAAAGAAQAAAABAAEAAAAGAAUAAAABAAEAAAAGAAYAAAABAAEAAAAGAAcAAAABAAEAAAAHAAIAAAABAAEAAAAHAAMAAAABAAEAAAAHAAQAAAABAAEAAAAHAAUAAAABAAEAAAAHAAYAAAABAAEAAAAHAAcAAAABAAEAAAAIAAEAAAABAAAAAAAIAAIAAAABAAEAAAAIAAMAAAABAAEAAAAIAAQAAAABAAEAAAAIAAUAAAABAAEAAAAIAAYAAAABAAEAAAAIAAcAAAABAAEAAAAHAP//AAAAAAAAAAAIAP//AAABAAAAAAAJAP//AAABAAAAAAAIAAAAAAABAAEAAAAJAAAAAAABAAEAAAAJAAEAAAABAAEAAAAKAAIAAAABAAEAAAAKAAMAAAABAAEAAAALAAMAAAABAAEAAAALAAQAAAABAAEAAAALAAUAAAABAAEAAAALAAYAAAABAAEAAAAMAAIAAAABAAEAAAAMAAMAAAABAAEAAAAMAAQAAAABAAEAAAAMAAUAAAABAAEAAAAMAAYAAAABAAEAAAAJAAIAAAABAAEAAAAJAAMAAAABAAEAAAAJAAQAAAABAAEAAAAJAAUAAAABAAEAAAAJAAYAAAABAAEAAAAKAAQAAAABAAEAAAAKAAUAAAABAAEAAAAKAAYAAAABAAEAAAAJAAcAAAABAAEAAAAKAAcAAAABAAEAAAALAAcAAAABAAEAAAAMAAcAAAABAAEAAAAUAP//AAABAAAAAAAVAP//AAABAAAAAAAWAP//AAABAAAAAAAXAP//AAABAAAAAAAYAP//AAABAAAAAAAZAP//AAABAAAAAAAaAP//AAABAAAAAAAbAP//AAACAAAAAAAbAAAAAAACAAEAAAAdAAEAAAABAAAAAAAeAAEAAAABAAAAAAAfAAEAAAABAAAAAAAgAAEAAAACAAAAAAAgAAMAAAACAAEAAAAgAAQAAAACAAEAAAAgAAUAAAACAAEAAAAgAAYAAAACAAEAAAAiAAMAAAAAAAYAAAAjAAMAAAABAAYAAAAkAAMAAAABAAYAAAAlAAMAAAACAAYAAAANAAIAAAABAAEAAAANAAMAAAABAAEAAAANAAQAAAABAAEAAAANAAUAAAABAAEAAAANAAYAAAABAAEAAAANAAcAAAABAAEAAAAOAAIAAAABAAEAAAAOAAMAAAABAAEAAAAOAAQAAAABAAEAAAAOAAUAAAABAAEAAAAOAAYAAAABAAEAAAAOAAcAAAABAAEAAAAPAAIAAAABAAEAAAAPAAMAAAABAAEAAAAPAAQAAAABAAEAAAAPAAUAAAABAAEAAAAPAAYAAAABAAEAAAAPAAcAAAABAAEAAAAQAAIAAAABAAEAAAAQAAMAAAABAAEAAAAQAAQAAAABAAEAAAAQAAUAAAABAAEAAAAQAAYAAAABAAEAAAAQAAcAAAABAAEAAAARAAMAAAABAAEAAAARAAQAAAABAAEAAAARAAUAAAABAAEAAAARAAYAAAABAAEAAAARAAcAAAABAAEAAAASAAIAAAABAAEAAAASAAMAAAABAAEAAAASAAQAAAABAAEAAAASAAUAAAABAAEAAAASAAYAAAABAAEAAAASAAcAAAABAAEAAAATAAAAAAAAAAEAAAATAAIAAAABAAEAAAATAAMAAAABAAEAAAATAAQAAAABAAEAAAATAAUAAAABAAEAAAATAAYAAAABAAEAAAATAAcAAAABAAEAAAAUAAAAAAABAAEAAAAUAAEAAAABAAEAAAAUAAIAAAABAAEAAAAUAAMAAAABAAEAAAAUAAUAAAABAAEAAAAUAAYAAAABAAEAAAAUAAcAAAABAAEAAAAVAAAAAAABAAEAAAAVAAEAAAABAAEAAAAVAAIAAAABAAEAAAAVAAMAAAABAAEAAAAVAAQAAAABAAEAAAAVAAUAAAABAAEAAAAVAAYAAAABAAEAAAAVAAcAAAABAAEAAAAWAAAAAAABAAEAAAAWAAEAAAABAAEAAAAWAAIAAAABAAEAAAAWAAMAAAABAAEAAAAWAAQAAAABAAEAAAAWAAUAAAABAAEAAAAWAAYAAAABAAEAAAAWAAcAAAABAAEAAAAXAAAAAAABAAEAAAAXAAEAAAABAAEAAAAXAAIAAAABAAEAAAAXAAMAAAABAAEAAAAXAAQAAAABAAEAAAAXAAUAAAABAAEAAAAXAAYAAAABAAEAAAAXAAcAAAABAAEAAAAYAAAAAAABAAEAAAAYAAEAAAABAAEAAAAYAAIAAAABAAEAAAAYAAMAAAABAAEAAAAYAAQAAAABAAEAAAAYAAUAAAABAAEAAAAYAAYAAAABAAEAAAAYAAcAAAABAAEAAAAZAAAAAAABAAEAAAAZAAEAAAABAAEAAAAZAAIAAAABAAEAAAAZAAMAAAABAAEAAAAZAAQAAAABAAEAAAAZAAUAAAABAAEAAAAZAAYAAAABAAEAAAAZAAcAAAABAAEAAAAaAAAAAAABAAEAAAAaAAEAAAABAAEAAAAaAAIAAAABAAEAAAAaAAMAAAABAAEAAAAaAAQAAAABAAEAAAAaAAUAAAABAAEAAAAaAAYAAAABAAEAAAAaAAcAAAABAAEAAAAbAAQAAAABAAEAAAAbAAUAAAABAAEAAAAbAAYAAAABAAEAAAAbAAcAAAABAAEAAAAcAAQAAAABAAEAAAAcAAUAAAABAAEAAAAcAAYAAAABAAEAAAAcAAcAAAABAAEAAAAdAAQAAAABAAEAAAAdAAUAAAABAAEAAAAdAAYAAAABAAEAAAAdAAcAAAABAAEAAAAeAAQAAAABAAEAAAAeAAUAAAABAAEAAAAeAAYAAAABAAEAAAAeAAcAAAABAAEAAAAfAAQAAAABAAEAAAAfAAUAAAABAAEAAAAfAAYAAAABAAEAAAAfAAcAAAABAAEAAAAcAAIAAAABAAEAAAAcAAMAAAABAAEAAAAdAAIAAAABAAEAAAAdAAMAAAABAAEAAAAeAAIAAAABAAEAAAAeAAMAAAABAAEAAAAfAAIAAAABAAEAAAAfAAMAAAABAAEAAAALAAIAAAABAAEAAAD+/wQAAAABAAEAAAARAAIAAAABAAEAAAAUAAQAAAABAAEAAAAgAAcAAAACAAEAAAAPAPv/AQAAAAYAAAAQAPv/AQABAAYAAAAgAAIAAAACAAEAAAALAP3/AAADAAAAAAAMAP3/AAAEAAAAAAANAP3/AAAFAAAAAAAcAAEAAAABAAAAAAAbAAEAAAABAAAAAAAbAAIAAAABAAEAAAAbAAMAAAABAAEAAAD7/wgAAAABAAEAAAD8/wgAAAABAAEAAAD9/wgAAAABAAEAAAD+/wgAAAABAAEAAAD//wgAAAABAAEAAAAAAAgAAAABAAEAAAABAAgAAAABAAEAAAACAAgAAAABAAEAAAADAAgAAAABAAEAAAAEAAgAAAABAAEAAAAFAAgAAAABAAEAAAAGAAgAAAABAAEAAAAHAAgAAAABAAEAAAAIAAgAAAABAAEAAAAJAAgAAAABAAEAAAAKAAgAAAABAAEAAAALAAgAAAABAAEAAAAMAAgAAAABAAEAAAANAAgAAAABAAEAAAAOAAgAAAABAAEAAAAPAAgAAAABAAEAAAAQAAgAAAABAAEAAAARAAgAAAABAAEAAAASAAgAAAABAAEAAAATAAgAAAABAAEAAAAUAAgAAAABAAEAAAAVAAgAAAABAAEAAAAWAAgAAAABAAEAAAAXAAgAAAABAAEAAAAYAAgAAAABAAEAAAAZAAgAAAABAAEAAAAaAAgAAAABAAEAAAAbAAgAAAABAAEAAAAcAAgAAAABAAEAAAAdAAgAAAABAAEAAAAeAAgAAAABAAEAAAAfAAgAAAABAAEAAAAfAAkAAAABAAEAAAAeAAkAAAABAAEAAAAdAAkAAAABAAEAAAAcAAkAAAABAAEAAAAbAAkAAAABAAEAAAAaAAkAAAABAAEAAAAZAAkAAAABAAEAAAAYAAkAAAABAAEAAAAXAAkAAAABAAEAAAAWAAkAAAABAAEAAAAVAAkAAAABAAEAAAAUAAkAAAABAAEAAAATAAkAAAABAAEAAAASAAkAAAABAAEAAAARAAkAAAABAAEAAAAQAAkAAAABAAEAAAAPAAkAAAABAAEAAAAOAAkAAAABAAEAAAANAAkAAAABAAEAAAAMAAkAAAABAAEAAAALAAkAAAABAAEAAAAKAAkAAAABAAEAAAAJAAkAAAABAAEAAAAIAAkAAAABAAEAAAAHAAkAAAABAAEAAAAGAAkAAAABAAEAAAAFAAkAAAABAAEAAAAEAAkAAAABAAEAAAADAAkAAAABAAEAAAACAAkAAAABAAEAAAABAAkAAAABAAEAAAAAAAkAAAABAAEAAAD//wkAAAABAAEAAAD+/wkAAAABAAEAAAD9/wkAAAABAAEAAAD8/wkAAAABAAEAAAD7/wkAAAABAAEAAAD7/woAAAABAAEAAAD8/woAAAABAAEAAAD9/woAAAABAAEAAAD9/wsAAAABAAEAAAD+/wsAAAABAAEAAAD//wsAAAABAAEAAAAAAAsAAAABAAEAAAAAAAoAAAABAAEAAAABAAoAAAABAAEAAAACAAoAAAABAAEAAAADAAoAAAABAAEAAAAEAAoAAAABAAEAAAAFAAoAAAABAAEAAAD+/woAAAABAAEAAAD//woAAAABAAEAAAAGAAoAAAABAAEAAAAHAAoAAAABAAEAAAAIAAoAAAABAAEAAAAJAAoAAAABAAEAAAAKAAoAAAABAAEAAAANAAoAAAABAAEAAAAMAAoAAAABAAEAAAALAAoAAAABAAEAAAAOAAoAAAABAAEAAAAPAAoAAAABAAEAAAAQAAoAAAABAAEAAAARAAoAAAABAAEAAAASAAoAAAABAAEAAAATAAoAAAABAAEAAAAUAAoAAAABAAEAAAAVAAoAAAABAAEAAAAWAAoAAAABAAEAAAAXAAoAAAABAAEAAAAYAAoAAAABAAEAAAAZAAoAAAABAAEAAAAaAAoAAAABAAEAAAAbAAoAAAABAAEAAAAcAAoAAAABAAEAAAAdAAoAAAABAAEAAAAeAAoAAAABAAEAAAAfAAoAAAABAAEAAAAfAAsAAAABAAEAAAAeAAsAAAABAAEAAAAdAAsAAAABAAEAAAAcAAsAAAABAAEAAAAbAAwAAAABAAEAAAAaAAwAAAABAAEAAAAZAAwAAAABAAEAAAAYAAwAAAABAAEAAAAXAAwAAAABAAEAAAAWAAwAAAABAAEAAAAVAAwAAAABAAEAAAAUAAwAAAABAAEAAAATAAwAAAABAAEAAAASAAwAAAABAAEAAAARAAwAAAABAAEAAAAQAAwAAAABAAEAAAAPAAwAAAABAAEAAAAOAAsAAAABAAEAAAANAAsAAAABAAEAAAAMAAsAAAABAAEAAAALAAsAAAABAAEAAAAKAAsAAAABAAEAAAAJAAsAAAABAAEAAAAIAAsAAAABAAEAAAAHAAsAAAABAAEAAAAGAAsAAAABAAEAAAAFAAsAAAABAAEAAAAEAAsAAAABAAEAAAADAAsAAAABAAEAAAACAAsAAAABAAEAAAABAAsAAAABAAEAAAAaAAsAAAABAAEAAAAbAAsAAAABAAEAAAAZAAsAAAABAAEAAAAYAAsAAAABAAEAAAAXAAsAAAABAAEAAAAWAAsAAAABAAEAAAAVAAsAAAABAAEAAAAUAAsAAAABAAEAAAATAAsAAAABAAEAAAASAAsAAAABAAEAAAARAAsAAAABAAEAAAAQAAsAAAABAAEAAAAPAAsAAAABAAEAAAD8/wsAAAABAAEAAAD7/wsAAAABAAEAAAD7/wwAAAABAAEAAAD8/wwAAAABAAEAAAD9/wwAAAABAAEAAAD+/wwAAAABAAEAAAD//wwAAAABAAEAAAAAAAwAAAABAAEAAAABAAwAAAABAAEAAAACAAwAAAABAAEAAAADAAwAAAABAAEAAAAEAAwAAAABAAEAAAAFAAwAAAABAAEAAAAGAAwAAAABAAEAAAAHAAwAAAABAAEAAAAIAAwAAAABAAEAAAAJAAwAAAABAAEAAAAKAAwAAAABAAEAAAALAAwAAAABAAEAAAAMAAwAAAABAAEAAAANAAwAAAABAAEAAAAOAAwAAAABAAEAAAAcAAwAAAABAAEAAAAdAAwAAAABAAEAAAAeAAwAAAABAAEAAAAfAAwAAAABAAEAAAAfAA0AAAABAAEAAAAeAA0AAAABAAEAAAAdAA0AAAABAAEAAAAcAA0AAAABAAEAAAAbAA0AAAABAAEAAAAaAA0AAAABAAEAAAAZAA0AAAABAAEAAAAYAA0AAAABAAEAAAAXAA0AAAABAAEAAAAWAA0AAAABAAEAAAAVAA0AAAABAAEAAAAUAA0AAAABAAEAAAATAA0AAAABAAEAAAASAA0AAAABAAEAAAARAA0AAAABAAEAAAAQAA0AAAABAAEAAAAPAA0AAAABAAEAAAAOAA0AAAABAAEAAAANAA0AAAABAAEAAAAMAA0AAAABAAEAAAALAA0AAAABAAEAAAAKAA0AAAABAAEAAAAJAA0AAAABAAEAAAAIAA0AAAABAAEAAAAHAA0AAAABAAEAAAAGAA0AAAABAAEAAAAFAA0AAAABAAEAAAAEAA0AAAABAAEAAAADAA0AAAABAAEAAAACAA0AAAABAAEAAAABAA0AAAABAAEAAAAAAA0AAAABAAEAAAD//w0AAAABAAEAAAD+/w0AAAABAAEAAAD9/w0AAAABAAEAAAD8/w0AAAABAAEAAAD7/w0AAAABAAEAAAD7/w4AAAABAAEAAAD8/w4AAAABAAEAAAD9/w4AAAABAAEAAAD+/w4AAAABAAEAAAD//w4AAAABAAEAAAAAAA4AAAABAAEAAAABAA4AAAABAAEAAAACAA4AAAABAAEAAAADAA4AAAABAAEAAAAEAA4AAAABAAEAAAAFAA4AAAABAAEAAAAGAA4AAAABAAEAAAAHAA4AAAABAAEAAAAIAA4AAAABAAEAAAAJAA4AAAABAAEAAAAKAA4AAAABAAEAAAALAA4AAAABAAEAAAAMAA4AAAABAAEAAAANAA4AAAABAAEAAAAOAA4AAAABAAEAAAAPAA4AAAABAAEAAAAQAA4AAAABAAEAAAARAA4AAAABAAEAAAASAA4AAAABAAEAAAATAA4AAAABAAEAAAAfAA4AAAABAAEAAAAeAA4AAAABAAEAAAAdAA4AAAABAAEAAAAcAA4AAAABAAEAAAAbAA4AAAABAAEAAAAaAA4AAAABAAEAAAAZAA4AAAABAAEAAAAYAA4AAAABAAEAAAAXAA4AAAABAAEAAAAWAA4AAAABAAEAAAAVAA4AAAABAAEAAAAUAA4AAAABAAEAAAALAA8AAAABAAEAAAAKAA8AAAABAAEAAAAJAA8AAAABAAEAAAAIAA8AAAABAAEAAAAHAA8AAAABAAEAAAAGAA8AAAABAAEAAAAFAA8AAAABAAEAAAAEAA8AAAABAAEAAAADAA8AAAABAAEAAAACAA8AAAABAAEAAAABAA8AAAABAAEAAAAAAA8AAAABAAEAAAD//w8AAAABAAEAAAD+/w8AAAABAAEAAAD9/w8AAAABAAEAAAD8/w8AAAABAAEAAAD7/w8AAAABAAEAAAD//xAAAAABAAEAAAAAABAAAAABAAEAAAABABAAAAABAAEAAAACABAAAAABAAEAAAADABAAAAABAAEAAAAEABAAAAABAAEAAAAFABAAAAABAAEAAAAGABAAAAABAAEAAAAHABAAAAABAAEAAAAIABAAAAABAAEAAAAJABAAAAABAAEAAAAMAA8AAAABAAEAAAANAA8AAAABAAEAAAAOAA8AAAABAAEAAAAPAA8AAAABAAEAAAASAA8AAAABAAEAAAATAA8AAAABAAEAAAAUAA8AAAABAAEAAAAVAA8AAAABAAEAAAAWAA8AAAABAAEAAAAXAA8AAAABAAEAAAAYAA8AAAABAAEAAAAZAA8AAAABAAEAAAAaAA8AAAABAAEAAAAbAA8AAAABAAEAAAAcAA8AAAABAAEAAAAdAA8AAAABAAEAAAAeAA8AAAABAAEAAAAfAA8AAAABAAEAAAARAA8AAAABAAEAAAAQAA8AAAABAAEAAAASABAAAAABAAEAAAATABAAAAABAAEAAAAUABAAAAABAAEAAAAVABAAAAABAAEAAAAWABAAAAABAAEAAAAXABAAAAABAAEAAAAYABAAAAABAAEAAAAZABAAAAABAAEAAAAaABAAAAABAAEAAAAbABAAAAABAAEAAAAcABAAAAABAAEAAAAdABAAAAABAAEAAAAeABAAAAABAAEAAAAfABAAAAABAAEAAAAOABAAAAABAAEAAAANABAAAAABAAEAAAAMABAAAAABAAEAAAALABAAAAABAAEAAAAKABAAAAABAAEAAAAPABAAAAABAAEAAAAQABAAAAABAAEAAAARABAAAAABAAEAAAD+/xAAAAABAAEAAAD9/xAAAAABAAEAAAD8/xAAAAABAAEAAAD7/xAAAAABAAEAAAD6/wgAAAAAAAEAAAD6/wkAAAAAAAEAAAD6/woAAAAAAAEAAAD6/wsAAAAAAAEAAAD6/wwAAAAAAAEAAAD6/w0AAAAAAAEAAAD6/w4AAAAAAAEAAAD6/w8AAAAAAAEAAAD6/xAAAAAAAAEAAAD6/xEAAAAAAAIAAAAgAAgAAAACAAEAAAAgAAkAAAACAAEAAAAgAAoAAAACAAEAAAAgAAsAAAACAAEAAAAgAAwAAAACAAEAAAAgAA0AAAACAAEAAAAgAA4AAAACAAEAAAAgAA8AAAACAAEAAAAgABAAAAACAAEAAAAgABEAAAACAAIAAAAfABEAAAABAAIAAAAeABEAAAABAAIAAAAdABEAAAABAAIAAAAcABEAAAABAAIAAAAbABEAAAABAAIAAAAaABEAAAABAAIAAAAZABEAAAABAAIAAAAYABEAAAABAAIAAAAXABEAAAABAAIAAAAWABEAAAABAAIAAAAVABEAAAABAAIAAAAUABEAAAABAAIAAAATABEAAAABAAIAAAASABEAAAABAAIAAAARABEAAAABAAIAAAAQABEAAAABAAIAAAAPABEAAAABAAIAAAAOABEAAAABAAIAAAANABEAAAABAAIAAAAMABEAAAABAAIAAAALABEAAAABAAIAAAAKABEAAAABAAIAAAAJABEAAAABAAIAAAAIABEAAAABAAIAAAAHABEAAAABAAIAAAAGABEAAAABAAIAAAAFABEAAAABAAIAAAAEABEAAAABAAIAAAADABEAAAABAAIAAAACABEAAAABAAIAAAABABEAAAABAAIAAAAAABEAAAABAAIAAAD//xEAAAABAAIAAAD+/xEAAAABAAIAAAD9/xEAAAABAAIAAAD8/xEAAAABAAIAAAD7/xEAAAABAAIAAAApAAYAAAAAAAAAAAAqAAYAAAABAAAAAAArAAYAAAABAAAAAAAsAAYAAAABAAAAAAAtAAYAAAABAAAAAAAxAAYAAAABAAAAAAAyAAYAAAACAAAAAAAyAAcAAAACAAEAAAAyAAgAAAACAAEAAAAyAAkAAAACAAEAAAAyAAoAAAACAAEAAAAyAAsAAAACAAEAAAAyAAwAAAACAAEAAAAyAA0AAAACAAEAAAAyAA4AAAACAAEAAAAyAA8AAAACAAEAAAAyABAAAAACAAEAAAAyABEAAAACAAEAAAAyABIAAAACAAEAAAApAAcAAAAAAAEAAAApAAgAAAAAAAEAAAApAAkAAAAAAAEAAAApAAoAAAAAAAEAAAApAAsAAAAAAAEAAAApAAwAAAAAAAEAAAApAA8AAAAAAAEAAAApABAAAAAAAAEAAAApABEAAAAAAAEAAAApABIAAAAAAAEAAAAyABMAAAACAAIAAAAxABMAAAABAAIAAAAwABMAAAABAAIAAAAvABMAAAABAAIAAAAuABMAAAABAAIAAAAtABMAAAABAAIAAAAsABMAAAABAAIAAAArABMAAAABAAIAAAAqABMAAAABAAIAAAApABMAAAAAAAIAAAAxABIAAAABAAEAAAAwABIAAAABAAEAAAAvABIAAAABAAEAAAAuABIAAAABAAEAAAAtABIAAAABAAEAAAAsABIAAAABAAEAAAArABIAAAABAAEAAAAqABIAAAABAAEAAAAqABEAAAABAAEAAAAqABAAAAABAAEAAAAqAA8AAAABAAEAAAAqAA4AAAABAAEAAAAqAAwAAAABAAEAAAAqAAsAAAABAAEAAAAqAAoAAAABAAEAAAAqAAkAAAABAAEAAAAqAAgAAAABAAEAAAAqAAcAAAABAAEAAAArAAcAAAABAAEAAAAsAAcAAAABAAEAAAAtAAcAAAABAAEAAAAxAAcAAAABAAEAAAAxAAgAAAABAAEAAAAxAAkAAAABAAEAAAAxAAoAAAABAAEAAAAxAAsAAAABAAEAAAAxAAwAAAABAAEAAAAxAA0AAAABAAEAAAAxAA4AAAABAAEAAAAxAA8AAAABAAEAAAAxABAAAAABAAEAAAAxABEAAAABAAEAAAAwABEAAAABAAEAAAAvABEAAAABAAEAAAAuABEAAAABAAEAAAAtABEAAAABAAEAAAAsABEAAAABAAEAAAArABEAAAABAAEAAAArABAAAAABAAEAAAArAA8AAAABAAEAAAArAA0AAAABAAEAAAArAAwAAAABAAEAAAArAAkAAAABAAEAAAArAAgAAAABAAEAAAArAAoAAAABAAEAAAArAAsAAAABAAEAAAAsAA0AAAABAAEAAAArAA4AAAABAAEAAAAsAA4AAAABAAEAAAAsAA8AAAABAAEAAAAtAA8AAAABAAEAAAAsABAAAAABAAEAAAAtABAAAAABAAEAAAAuABAAAAABAAEAAAAvABAAAAABAAEAAAAwABAAAAABAAEAAAAvAA8AAAABAAEAAAAuAA8AAAABAAEAAAAwAA8AAAABAAEAAAAwAA4AAAABAAEAAAAvAA4AAAABAAEAAAAwAA0AAAADAAEAAAAvAA0AAAABAAEAAAAuAA4AAAABAAEAAAAtAA4AAAABAAEAAAAtAA0AAAABAAEAAAAuAA0AAAABAAEAAAAvAAwAAAABAAEAAAAuAAwAAAABAAEAAAAtAAwAAAABAAEAAAAsAAwAAAABAAEAAAAwAAwAAAABAAEAAAAwAAsAAAABAAEAAAAwAAoAAAABAAEAAAAvAAoAAAABAAEAAAAuAAoAAAABAAEAAAAtAAoAAAABAAEAAAAsAAoAAAABAAEAAAAsAAsAAAABAAEAAAAtAAsAAAABAAEAAAAuAAsAAAABAAEAAAAvAAsAAAABAAEAAAAwAAkAAAABAAEAAAAvAAkAAAABAAEAAAAuAAkAAAABAAEAAAAtAAkAAAABAAEAAAAsAAkAAAAEAAEAAAAsAAgAAAABAAEAAAAtAAgAAAABAAEAAAAuAAgAAAABAAEAAAAwAAgAAAABAAEAAAAvAAgAAAABAAEAAAAqAAUAAAAAAAcAAAArAAUAAAABAAcAAAAsAAUAAAABAAcAAAAsAAQAAAABAAcAAAArAAQAAAABAAcAAAAsAAMAAAABAAcAAAApAA0AAAAAAAEAAAApAA4AAAAAAAEAAAAqAA0AAAABAAEAAAAjAAQAAAAEAAMAAAAkAAQAAAAEAAMAAAAkAAUAAAAEAAMAAAAjAAUAAAAEAAMAAAAjAAYAAAAEAAMAAAAkAAYAAAAEAAMAAAAkAAcAAAAEAAMAAAAjAAcAAAAEAAMAAAAjAAgAAAAEAAMAAAAkAAgAAAAEAAMAAAAkAAkAAAAEAAMAAAAkAAoAAAAEAAMAAAAkAAsAAAAEAAMAAAAkAAwAAAAEAAMAAAAjAAkAAAAEAAMAAAAjAAoAAAAEAAMAAAAjAAsAAAAEAAMAAAAkAA0AAAAEAAMAAAAkAA4AAAAEAAMAAAAkAA8AAAAEAAMAAAAkABAAAAAEAAMAAAAkABEAAAAEAAMAAAAkABIAAAAEAAMAAAAkABMAAAAEAAMAAAAkABQAAAAEAAMAAAAkABUAAAAEAAMAAAAkABYAAAAEAAMAAAAjAAwAAAAEAAMAAAAjAA0AAAAEAAMAAAAjAA4AAAAEAAMAAAAjAA8AAAAEAAMAAAAjABAAAAAEAAMAAAAjABEAAAAEAAMAAAAjABIAAAAEAAMAAAAjABMAAAAEAAMAAAAjABQAAAAEAAMAAAAjABUAAAAEAAMAAAAjABYAAAAEAAMAAAAkABcAAAAEAAQAAAAjABcAAAAEAAQAAAAiAAQAAAADAAQAAAAlAAQAAAAFAAQAAAAKAP//AAABAAAAAAATAP//AAAAAAAAAAALAAEAAAABAAAAAAAMAAEAAAABAAAAAAANAAEAAAABAAAAAAAOAAEAAAABAAAAAAAPAAEAAAABAAAAAAAQAAEAAAABAAAAAAARAAEAAAABAAAAAAASAAEAAAABAAAAAAATAAEAAAABAAAAAAALAP//AAACAAAAAAALAAAAAAACAAEAAAAKAAAAAAABAAEAAAAKAAEAAAABAAEAAAASAAAAAAABAAcAAAAvAAYAAAABAAAAAAAuAAYAAAABAAAAAAAuAAcAAAABAAEAAAAvAAcAAAABAAEAAAAwAAcAAAABAAEAAAAwAAYAAAABAAAAAAARAPv/AAABAAYAAAASAPv/AAABAAYAAAATAPv/AAABAAYAAAAUAPv/AAABAAYAAAAVAPv/AAACAAYAAAA0ABMAAAADAAIAAAA1ABMAAAAEAAIAAAA2ABMAAAAEAAIAAAA3ABMAAAAEAAIAAAA4ABMAAAAEAAIAAAA5ABMAAAAEAAIAAAA6ABMAAAAEAAIAAAA7ABMAAAAEAAIAAAA8ABMAAAAEAAIAAAA9ABMAAAAEAAIAAAA+ABMAAAAEAAIAAAA/ABMAAAAEAAIAAABAABMAAAAEAAIAAABBABMAAAAEAAIAAABCABMAAAAEAAIAAABDABMAAAAEAAIAAABEABMAAAAEAAIAAABFABMAAAAEAAIAAABGABMAAAAEAAIAAABHABMAAAAEAAIAAABIABMAAAAEAAIAAABJABMAAAAEAAIAAABKABMAAAAEAAIAAABLABMAAAAEAAIAAABMABMAAAAEAAIAAABNABMAAAAEAAIAAABOABMAAAAEAAIAAABPABMAAAAEAAIAAABQABMAAAAEAAIAAABRABMAAAAEAAIAAABSABMAAAAFAAQAAABTABMAAAAFAAQAAABUABMAAAAFAAQAAABVABMAAAAFAAQAAABWABMAAAAAAAEAAABXABMAAAABAAEAAABYABMAAAABAAEAAABZABMAAAABAAEAAABaABMAAAABAAEAAABbABMAAAABAAEAAABcABMAAAABAAEAAABdABMAAAABAAEAAABeABMAAAABAAEAAABfABMAAAABAAEAAABgABMAAAABAAEAAABhABMAAAACAAEAAABjABMAAAAFAAQAAABkABMAAAAFAAQAAABlABMAAAAFAAQAAABmABMAAAAFAAQAAABoABMAAAAFAAQAAABnABMAAAAFAAQAAABpABMAAAAFAAQAAABqABMAAAAFAAQAAABrABMAAAAFAAQAAABsABMAAAAFAAQAAABtABMAAAAFAAQAAABuABMAAAAFAAQAAABvABMAAAAFAAQAAABwABMAAAAFAAQAAABxABMAAAAFAAQAAAByABMAAAAFAAIAAAByABQAAAAFAAQAAAA1ABQAAAAEAAQAAAA2ABQAAAAEAAQAAAA3ABQAAAAEAAQAAAA4ABQAAAAEAAQAAAA5ABQAAAAEAAQAAAA6ABQAAAAEAAQAAAA7ABQAAAAEAAQAAAA8ABQAAAAEAAQAAAA9ABQAAAAEAAQAAAA+ABQAAAAEAAQAAAA/ABQAAAAEAAQAAABAABQAAAAEAAQAAABBABQAAAAEAAQAAABCABQAAAAEAAQAAABDABQAAAAEAAQAAABEABQAAAAEAAQAAABFABQAAAAEAAQAAABGABQAAAAEAAQAAABHABQAAAAEAAQAAABIABQAAAAEAAQAAABJABQAAAAEAAQAAABKABQAAAAEAAQAAABLABQAAAAEAAQAAABMABQAAAAEAAQAAABNABQAAAAEAAQAAABOABQAAAAEAAQAAABPABQAAAAEAAQAAABQABQAAAAEAAQAAABRABQAAAAEAAQAAABSABQAAAAEAAQAAABTABQAAAAEAAQAAABUABQAAAAEAAQAAABVABQAAAAEAAQAAABWABQAAAAAAAEAAABXABQAAAABAAEAAABYABQAAAABAAEAAABZABQAAAABAAEAAABaABQAAAABAAEAAABbABQAAAABAAEAAABcABQAAAABAAEAAABdABQAAAABAAEAAABeABQAAAABAAEAAABfABQAAAABAAEAAABgABQAAAABAAEAAABhABQAAAACAAEAAABjABQAAAAEAAQAAABkABQAAAAEAAQAAABlABQAAAAEAAQAAABmABQAAAAEAAQAAABnABQAAAAEAAQAAABoABQAAAAEAAQAAABpABQAAAAEAAQAAABqABQAAAAEAAQAAABrABQAAAAEAAQAAABsABQAAAAEAAQAAABtABQAAAAEAAQAAABuABQAAAAEAAQAAABvABQAAAAEAAQAAABwABQAAAAEAAQAAABxABQAAAAEAAQAAAA0ABQAAAADAAQAAABWAPz/AAAAAAAAAABXAPz/AAABAAAAAABYAPz/AAABAAAAAABfAPz/AAABAAAAAABgAPz/AAABAAAAAABhAPz/AAACAAAAAABXAP3/AAABAAEAAABYAP3/AAABAAEAAABYAP7/AAABAAEAAABXAP7/AAABAAEAAABXAP//AAABAAEAAABXAAAAAAABAAEAAABXAAEAAAABAAEAAABXAAIAAAABAAEAAABXAAMAAAABAAEAAABXAAQAAAABAAEAAABXAAUAAAABAAEAAABXAAYAAAABAAEAAABYAP//AAABAAEAAABYAAAAAAABAAEAAABYAAEAAAABAAEAAABYAAIAAAABAAEAAABYAAMAAAABAAEAAABYAAQAAAABAAEAAABYAAUAAAABAAEAAABYAAYAAAABAAEAAABfAP3/AAABAAEAAABfAP7/AAABAAEAAABfAP//AAABAAEAAABfAAAAAAABAAEAAABfAAEAAAABAAEAAABfAAIAAAABAAEAAABfAAMAAAABAAEAAABfAAQAAAABAAEAAABfAAUAAAABAAEAAABfAAYAAAABAAEAAABgAP3/AAABAAEAAABgAP7/AAABAAEAAABgAP//AAABAAEAAABgAAAAAAABAAEAAABgAAEAAAABAAEAAABgAAIAAAABAAEAAABgAAMAAAABAAEAAABgAAQAAAABAAEAAABgAAUAAAABAAEAAABgAAYAAAABAAEAAABhAP3/AAACAAEAAABhAP7/AAACAAEAAABhAP//AAACAAEAAABhAAAAAAACAAEAAABhAAEAAAACAAEAAABhAAIAAAACAAEAAABhAAMAAAACAAEAAABhAAQAAAACAAEAAABhAAUAAAACAAEAAABhAAYAAAACAAEAAABXAAcAAAABAAEAAABXAAgAAAABAAEAAABXAAkAAAABAAEAAABXAAoAAAABAAEAAABXAAsAAAABAAEAAABXAAwAAAABAAEAAABXAA0AAAABAAEAAABXAA4AAAABAAEAAABXAA8AAAABAAEAAABXABAAAAABAAEAAABXABEAAAABAAEAAABXABIAAAABAAEAAABXABUAAAABAAEAAABXABYAAAABAAEAAABXABcAAAABAAEAAABXABgAAAABAAEAAABXABkAAAABAAEAAABYAAcAAAABAAEAAABYAAgAAAABAAEAAABYAAkAAAABAAEAAABYAAoAAAABAAEAAABYAAsAAAABAAEAAABYAAwAAAABAAEAAABYAA0AAAABAAEAAABYAA4AAAABAAEAAABYAA8AAAABAAEAAABYABAAAAABAAEAAABYABEAAAABAAEAAABYABIAAAABAAEAAABYABUAAAABAAEAAABYABYAAAABAAEAAABYABcAAAABAAEAAABYABgAAAABAAEAAABYABkAAAABAAEAAABZABAAAAABAAEAAABZABEAAAABAAEAAABZABIAAAABAAEAAABZABUAAAABAAEAAABZABYAAAABAAEAAABZABcAAAABAAEAAABZABgAAAABAAEAAABZABkAAAABAAEAAABaABAAAAABAAEAAABaABEAAAABAAEAAABaABIAAAABAAEAAABaABUAAAABAAEAAABaABYAAAABAAEAAABaABcAAAABAAEAAABaABgAAAABAAEAAABaABkAAAABAAEAAABbABAAAAABAAEAAABbABEAAAABAAEAAABbABIAAAABAAEAAABbABUAAAABAAEAAABbABYAAAABAAEAAABbABcAAAABAAEAAABbABgAAAABAAEAAABbABkAAAABAAEAAABcABAAAAABAAEAAABcABEAAAABAAEAAABcABIAAAABAAEAAABcABUAAAABAAEAAABcABYAAAABAAEAAABcABcAAAABAAEAAABcABgAAAABAAEAAABcABkAAAABAAEAAABdABAAAAABAAEAAABdABEAAAABAAEAAABdABIAAAABAAEAAABdABUAAAABAAEAAABdABYAAAABAAEAAABdABcAAAABAAEAAABdABgAAAABAAEAAABdABkAAAABAAEAAABeABAAAAABAAEAAABeABEAAAABAAEAAABeABIAAAABAAEAAABeABUAAAABAAEAAABeABYAAAABAAEAAABeABcAAAABAAEAAABeABgAAAABAAEAAABeABkAAAABAAEAAABfAAcAAAABAAEAAABfAAgAAAABAAEAAABfAAkAAAABAAEAAABfAAoAAAABAAEAAABfAAsAAAABAAEAAABfAAwAAAABAAEAAABfAA0AAAABAAEAAABfAA4AAAABAAEAAABfAA8AAAABAAEAAABfABAAAAABAAEAAABfABEAAAABAAEAAABfABIAAAABAAEAAABfABUAAAABAAEAAABfABYAAAABAAEAAABfABcAAAABAAEAAABfABgAAAABAAEAAABfABkAAAABAAEAAABgAAcAAAABAAEAAABgAAgAAAABAAEAAABgAAkAAAABAAEAAABgAAoAAAABAAEAAABgAAsAAAABAAEAAABgAAwAAAABAAEAAABgAA0AAAABAAEAAABgAA4AAAABAAEAAABgAA8AAAABAAEAAABgABAAAAABAAEAAABgABEAAAABAAEAAABgABIAAAABAAEAAABgABUAAAABAAEAAABgABYAAAABAAEAAABgABcAAAABAAEAAABgABgAAAABAAEAAABgABkAAAABAAEAAABhAAcAAAACAAEAAABhAAgAAAACAAEAAABhAAkAAAACAAEAAABhAAoAAAACAAEAAABhAAsAAAACAAEAAABhAAwAAAACAAEAAABhAA0AAAACAAEAAABhAA4AAAACAAEAAABhAA8AAAACAAEAAABhABAAAAACAAEAAABhABEAAAACAAEAAABhABIAAAACAAEAAABhABUAAAACAAEAAABhABYAAAACAAEAAABhABcAAAACAAEAAABhABgAAAACAAEAAABhABkAAAACAAEAAABWAP3/AAAAAAEAAABWAP7/AAAAAAEAAABWAP//AAAAAAEAAABWAAAAAAAAAAEAAABWAAEAAAAAAAEAAABWAAIAAAAAAAEAAABWAAMAAAAAAAEAAABWAAQAAAAAAAEAAABWAAUAAAAAAAEAAABWAAYAAAAAAAEAAABWAAcAAAAAAAEAAABWAAgAAAAAAAEAAABWAAkAAAAAAAEAAABWAAoAAAAAAAEAAABWAAsAAAAAAAEAAABWAAwAAAAAAAEAAABWAA0AAAAAAAEAAABWAA4AAAAAAAEAAABWAA8AAAAAAAEAAABWABAAAAAAAAEAAABWABEAAAAAAAEAAABWABIAAAAAAAEAAABWABUAAAAAAAEAAABWABYAAAAAAAEAAABWABcAAAAAAAEAAABWABgAAAAAAAEAAABWABkAAAAAAAEAAABZAPz/AAAAAAcAAABZAP3/AAABAAcAAABZAP7/AAABAAcAAABZAP//AAABAAcAAABeAPz/AAABAAcAAABeAP3/AAAAAAcAAABeAP7/AAAAAAcAAABeAP//AAAAAAcAAABeAAAAAAAAAAcAAABeAAEAAAAAAAcAAABeAAIAAAABAAcAAABeAAMAAAABAAcAAABeAAQAAAABAAcAAABeAAUAAAABAAcAAABeAAYAAAABAAcAAABeAAcAAAAAAAcAAABeAAgAAAAAAAcAAABeAAkAAAAAAAcAAABeAAoAAAABAAcAAABeAAsAAAABAAcAAABeAAwAAAAAAAcAAABeAA0AAAAAAAcAAABeAA4AAAAAAAcAAABeAA8AAAAAAAcAAABZAA8AAAAAAAcAAABaAA8AAAAAAAcAAABbAA8AAAAAAAcAAABcAA8AAAABAAcAAABdAA8AAAABAAcAAABZAAAAAAAAAAcAAABZAAEAAAAAAAcAAABZAAIAAAABAAcAAABZAAMAAAAAAAcAAABZAAQAAAAAAAcAAABZAAUAAAAAAAcAAABZAAYAAAAAAAcAAABZAAcAAAAAAAcAAABZAAgAAAAAAAcAAABZAAkAAAAAAAcAAABZAAoAAAAAAAcAAABZAAsAAAABAAcAAABZAAwAAAABAAcAAABZAA0AAAABAAcAAABZAA4AAAAAAAcAAABIAAEAAAAAAAYAAABJAAEAAAABAAYAAABKAAEAAAACAAYAAABLAP//AAADAAAAAABMAP//AAAEAAAAAABNAP//AAAEAAAAAABOAP//AAAEAAAAAABPAP//AAAEAAAAAABQAP//AAAEAAAAAABRAP//AAAEAAAAAABSAP//AAAEAAAAAABTAP//AAAFAAAAAABVAP3/AAAGAAMAAAA=")
 tile_set = SubResource("TileSet_gyy1v")
 
 [node name="World Colision" type="StaticBody2D" parent="Plataforms"]
@@ -1147,6 +348,10 @@ shape = SubResource("RectangleShape2D_fim2p")
 position = Vector2(711, 57)
 shape = SubResource("RectangleShape2D_fim2p")
 
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Plataforms/World Colision"]
+position = Vector2(1369, -40)
+shape = SubResource("RectangleShape2D_fim2p")
+
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="Plataforms/World Colision"]
 position = Vector2(712, 72)
 shape = SubResource("RectangleShape2D_fim2p")
@@ -1183,1272 +388,275 @@ shape = SubResource("RectangleShape2D_6gsjs")
 position = Vector2(1334.5, 319)
 shape = SubResource("RectangleShape2D_r5rqg")
 
-[node name="Knight" type="CharacterBody2D" parent="."]
-visibility_layer = 3
-z_index = -1
-position = Vector2(0, -160)
-collision_mask = 47
-script = ExtResource("1_oafpw")
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Plataforms/World Colision"]
+position = Vector2(1227, 25)
+shape = SubResource("RectangleShape2D_5aniq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Knight"]
-texture_filter = 1
-position = Vector2(1, 0)
-sprite_frames = SubResource("SpriteFrames_pfxno")
-animation = &"knight-death"
-autoplay = "knight-idle"
-frame = 3
-frame_progress = 1.0
-metadata/_edit_lock_ = true
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Plataforms/World Colision"]
+position = Vector2(1274, -7)
+shape = SubResource("RectangleShape2D_5aniq")
 
-[node name="Camera2D" type="Camera2D" parent="Knight"]
-position = Vector2(1, -4)
-zoom = Vector2(1.5, 1.5)
-metadata/_edit_lock_ = true
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Plataforms/World Colision"]
+position = Vector2(1409, 185.5)
+shape = SubResource("RectangleShape2D_wnmm1")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Knight"]
-position = Vector2(0.625, -1.9375)
-shape = SubResource("RectangleShape2D_ij524")
-metadata/_edit_lock_ = true
-
-[node name="DamageR" type="RayCast2D" parent="Knight"]
-target_position = Vector2(10, 1)
-collision_mask = 4
-metadata/_edit_lock_ = true
-
-[node name="DamageL" type="RayCast2D" parent="Knight"]
-target_position = Vector2(-10, 1)
-collision_mask = 4
-metadata/_edit_lock_ = true
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Plataforms/World Colision"]
+position = Vector2(1535.5, 185.75)
+shape = SubResource("RectangleShape2D_wnmm1")
 
 [node name="Decorations" type="TileMapLayer" parent="."]
 z_index = -2
 position = Vector2(2, 1)
-tile_map_data = PackedByteArray("AAD6//7/AAACAAMAAAD6////AAACAAQAAAD6/wAAAAACAAUAAAAHAP7/AAAGAAYAAAAGAAAAAAADAAYAAAD7/wAAAAADAAUAAAD7////AAACAAMAAAD8/wAAAAAEAAUAAAANAPz/AAADAAYAAAAdAP7/AAACAAMAAAAdAP//AAACAAQAAAAdAAAAAAACAAUAAAAVAP7/AAADAAUAAAAVAP3/AAACAAMAAAAtAAUAAAAFAAYAAAAcAAAAAAADAAYAAAAUAP7/AAAGAAYAAAAUAAMAAAAGAAYAAAACAAAAAAAFAAYAAAAiAAIAAAAFAAYAAAARAAAAAAAGAAYAAAAMAAAAAAADAAUAAAAMAP//AAACAAMAAAAxAAUAAAAGAAYAAAA=")
+tile_map_data = PackedByteArray("AAD6//7/AAACAAMAAAD6////AAACAAQAAAD6/wAAAAACAAUAAAAHAP7/AAAGAAYAAAAGAAAAAAADAAYAAAD7/wAAAAADAAUAAAD7////AAACAAMAAAD8/wAAAAAEAAUAAAANAPz/AAADAAYAAAAdAP7/AAACAAMAAAAdAP//AAACAAQAAAAdAAAAAAACAAUAAAAVAP7/AAADAAUAAAAVAP3/AAACAAMAAAAtAAUAAAAFAAYAAAAcAAAAAAADAAYAAAAUAP7/AAAGAAYAAAAUAAMAAAAGAAYAAAACAAAAAAAFAAYAAAAiAAIAAAAFAAYAAAARAAAAAAAGAAYAAAAMAAAAAAADAAUAAAAMAP//AAACAAMAAAAxAAUAAAAGAAYAAABNAAAAAAABAAQAAABNAAEAAAABAAQAAABSAP//AAABAAQAAABSAAAAAAABAAQAAABNAAIAAAABAAQAAABNAAMAAAABAAUAAABMAAAAAAABAAQAAABOAP//AAABAAQAAABOAAAAAAABAAUAAABPAP//AAABAAQAAABPAAAAAAABAAUAAABPAAEAAAABAAQAAABPAAIAAAABAAUAAABMAP//AAABAAQAAABNAP//AAABAAQAAABMAAEAAAABAAUAAABQAP//AAABAAQAAABQAAAAAAABAAQAAABQAAEAAAABAAQAAABQAAIAAAABAAQAAABQAAMAAAABAAQAAABQAAQAAAABAAQAAABRAP//AAABAAQAAABTAP//AAABAAQAAABLAP//AAABAAQAAABLAPz/AAACAAQAAABLAP3/AAACAAQAAABLAP7/AAACAAUAAABLAPv/AAACAAQAAABLAPr/AAACAAQAAABLAPn/AAACAAMAAAA=")
 tile_set = SubResource("TileSet_iga7v")
 
 [node name="Itens" type="Node2D" parent="."]
 
 [node name="Apples" type="Node2D" parent="Itens"]
 
-[node name="Apple" type="Area2D" parent="Itens/Apples"]
-z_index = -3
-position = Vector2(486, 8)
-collision_layer = 8
-script = ExtResource("21_aprvr")
+[node name="Apple" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(-54, -2)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Apples/Apple"]
-position = Vector2(1.9073486e-06, -1.9073486e-06)
-scale = Vector2(0.6, 0.563)
-sprite_frames = SubResource("SpriteFrames_kq0eg")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
+[node name="Apple2" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(216, 8)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Apples/Apple"]
-scale = Vector2(0.5000001, 0.4687499)
-shape = SubResource("CircleShape2D_ugu8i")
-metadata/_edit_lock_ = true
+[node name="Apple3" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(360, -24)
 
-[node name="Apple3" type="Area2D" parent="Itens/Apples"]
-position = Vector2(359, -21)
-collision_layer = 8
-script = ExtResource("21_aprvr")
+[node name="Apple4" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(488, 8)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Apples/Apple3"]
-position = Vector2(1.9073486e-06, -1.9073486e-06)
-scale = Vector2(0.6, 0.563)
-sprite_frames = SubResource("SpriteFrames_kq0eg")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
+[node name="Apple5" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(1224, -24)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Apples/Apple3"]
-scale = Vector2(0.5000001, 0.4687499)
-shape = SubResource("CircleShape2D_ugu8i")
-metadata/_edit_lock_ = true
+[node name="Apple6" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(1240, -24)
 
-[node name="Apple2" type="Area2D" parent="Itens/Apples"]
-position = Vector2(-41, 10)
-collision_layer = 8
-script = ExtResource("21_aprvr")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Apples/Apple2"]
-position = Vector2(1.9073486e-06, -1.9073486e-06)
-scale = Vector2(0.6, 0.563)
-sprite_frames = SubResource("SpriteFrames_kq0eg")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Apples/Apple2"]
-scale = Vector2(0.5000001, 0.4687499)
-shape = SubResource("CircleShape2D_ugu8i")
-metadata/_edit_lock_ = true
-
-[node name="Apple4" type="Area2D" parent="Itens/Apples"]
-position = Vector2(214, 8)
-collision_layer = 8
-script = ExtResource("21_aprvr")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Apples/Apple4"]
-position = Vector2(1.9073486e-06, -1.9073486e-06)
-scale = Vector2(0.6, 0.563)
-sprite_frames = SubResource("SpriteFrames_kq0eg")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Apples/Apple4"]
-scale = Vector2(0.5000001, 0.4687499)
-shape = SubResource("CircleShape2D_ugu8i")
-metadata/_edit_lock_ = true
+[node name="Apple7" parent="Itens/Apples" instance=ExtResource("2_iga7v")]
+position = Vector2(1232, -40)
 
 [node name="Potions" type="Node2D" parent="Itens"]
 
-[node name="SpeedPotion" type="Area2D" parent="Itens/Potions"]
-position = Vector2(712, 39)
-collision_layer = 8
-script = ExtResource("29_bp45c")
+[node name="Cristal" parent="Itens/Potions" instance=ExtResource("3_ce72a")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Potions/SpeedPotion"]
-shape = SubResource("CircleShape2D_wh8tt")
-metadata/_edit_lock_ = true
+[node name="Cristal2" parent="Itens/Potions" instance=ExtResource("3_ce72a")]
+position = Vector2(600, 40)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Potions/SpeedPotion"]
-scale = Vector2(0.6, 0.6)
-sprite_frames = SubResource("SpriteFrames_dx71k")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
+[node name="Cristal3" parent="Itens/Potions" instance=ExtResource("3_ce72a")]
+position = Vector2(1288, -24)
 
-[node name="ForcePotion" type="Area2D" parent="Itens/Potions"]
-position = Vector2(364, -97)
-collision_layer = 8
-script = ExtResource("10_qsrwn")
+[node name="ForcePotion" parent="Itens/Potions" instance=ExtResource("4_qsrwn")]
+position = Vector2(296, -88)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Potions/ForcePotion"]
-texture_filter = 1
-position = Vector2(-1, 0)
-sprite_frames = SubResource("SpriteFrames_5aniq")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
+[node name="SpeedPotion" parent="Itens/Potions" instance=ExtResource("5_lidbt")]
+position = Vector2(664, 88)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Potions/ForcePotion"]
-position = Vector2(-1, -1)
-shape = SubResource("CapsuleShape2D_lidbt")
-metadata/_edit_lock_ = true
-
-[node name="Cristal" type="Area2D" parent="Itens/Potions"]
-position = Vector2(296, -8)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Potions/Cristal"]
-scale = Vector2(0.4, 0.4)
-sprite_frames = SubResource("SpriteFrames_oos3a")
-animation = &"Cristal_idle"
-autoplay = "Cristal_idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Potions/Cristal"]
-rotation = 0.7853982
-shape = SubResource("CapsuleShape2D_v272i")
-metadata/_edit_lock_ = true
+[node name="ForcePotion2" parent="Itens/Potions" instance=ExtResource("4_qsrwn")]
+position = Vector2(816, 64)
 
 [node name="Coins" type="Node2D" parent="Itens"]
-position = Vector2(3, 1)
-
-[node name="Coins" type="Area2D" parent="Itens/Coins"]
-position = Vector2(30, 4)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins2" type="Area2D" parent="Itens/Coins"]
-position = Vector2(374, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins2"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins2"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins11" type="Area2D" parent="Itens/Coins"]
-position = Vector2(390, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins11"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins11"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins12" type="Area2D" parent="Itens/Coins"]
-position = Vector2(406, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins12"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins12"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins13" type="Area2D" parent="Itens/Coins"]
-position = Vector2(422, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins13"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins13"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins14" type="Area2D" parent="Itens/Coins"]
-position = Vector2(438, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins14"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins14"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins15" type="Area2D" parent="Itens/Coins"]
-position = Vector2(558, 36)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins15"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins15"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins16" type="Area2D" parent="Itens/Coins"]
-position = Vector2(574, 36)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins16"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins16"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins17" type="Area2D" parent="Itens/Coins"]
-position = Vector2(589, 37)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins17"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins17"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins21" type="Area2D" parent="Itens/Coins"]
-position = Vector2(755, 83)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins21"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins21"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins22" type="Area2D" parent="Itens/Coins"]
-position = Vector2(771, 83)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins22"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins22"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins23" type="Area2D" parent="Itens/Coins"]
-position = Vector2(787, 83)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins23"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins23"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins24" type="Area2D" parent="Itens/Coins"]
-position = Vector2(861, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins24"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins24"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins26" type="Area2D" parent="Itens/Coins"]
-position = Vector2(877, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins26"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins26"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins27" type="Area2D" parent="Itens/Coins"]
-position = Vector2(893, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins27"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins27"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins28" type="Area2D" parent="Itens/Coins"]
-position = Vector2(909, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins28"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins28"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins29" type="Area2D" parent="Itens/Coins"]
-position = Vector2(925, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins29"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins29"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins30" type="Area2D" parent="Itens/Coins"]
-position = Vector2(941, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins30"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins30"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins31" type="Area2D" parent="Itens/Coins"]
-position = Vector2(957, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins31"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins31"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins32" type="Area2D" parent="Itens/Coins"]
-position = Vector2(973, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins32"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins32"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins33" type="Area2D" parent="Itens/Coins"]
-position = Vector2(989, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins33"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins33"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins34" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1005, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins34"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins34"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins35" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1021, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins35"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins35"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins36" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1037, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins36"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins36"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins37" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1053, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins37"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins37"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins38" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1077, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins38"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins38"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins39" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1093, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins39"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins39"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins40" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1109, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins40"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins40"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins41" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1125, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins41"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins41"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins42" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1141, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins42"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins42"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins43" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1157, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins43"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins43"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins44" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1173, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins44"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins44"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins45" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1189, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins45"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins45"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins46" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1205, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins46"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins46"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins47" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1205, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins47"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins47"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins48" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1221, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins48"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins48"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins49" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1237, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins49"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins49"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins50" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1253, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins50"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins50"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins51" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1269, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins51"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins51"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins52" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1285, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins52"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins52"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins53" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1301, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins53"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins53"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins54" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1317, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins54"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins54"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins55" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1333, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins55"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins55"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins56" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1357, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins56"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins56"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins57" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1373, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins57"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins57"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins58" type="Area2D" parent="Itens/Coins"]
-position = Vector2(1373, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins58"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins58"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins25" type="Area2D" parent="Itens/Coins"]
-position = Vector2(845, 39)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins25"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins25"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins20" type="Area2D" parent="Itens/Coins"]
-position = Vector2(739, 83)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins20"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins20"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins18" type="Area2D" parent="Itens/Coins"]
-position = Vector2(678, 68)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins18"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins18"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins19" type="Area2D" parent="Itens/Coins"]
-position = Vector2(694, 52)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins19"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins19"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins3" type="Area2D" parent="Itens/Coins"]
-position = Vector2(182, -60)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins3"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins3"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins4" type="Area2D" parent="Itens/Coins"]
-position = Vector2(310, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins4"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins4"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins5" type="Area2D" parent="Itens/Coins"]
-position = Vector2(134, -28)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins5"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins5"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins6" type="Area2D" parent="Itens/Coins"]
-position = Vector2(198, -60)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins6"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins6"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins7" type="Area2D" parent="Itens/Coins"]
-position = Vector2(150, -44)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins7"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins7"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins8" type="Area2D" parent="Itens/Coins"]
-position = Vector2(46, 4)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins8"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins8"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins9" type="Area2D" parent="Itens/Coins"]
-position = Vector2(78, 4)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins9"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins9"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="Coins10" type="Area2D" parent="Itens/Coins"]
-position = Vector2(62, 4)
-collision_layer = 8
-script = ExtResource("28_wh8tt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Itens/Coins/Coins10"]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_ntgof")
-animation = &"Idle"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Itens/Coins/Coins10"]
-shape = SubResource("CircleShape2D_rqlpn")
-metadata/_edit_lock_ = true
-
-[node name="KillArea" type="Area2D" parent="."]
-position = Vector2(593, 191)
-collision_layer = 64
-collision_mask = 9
-script = ExtResource("29_6irsf")
-
-[node name="KILLAREASIZE" type="CollisionShape2D" parent="KillArea"]
-position = Vector2(-2.5, 2)
-shape = SubResource("RectangleShape2D_kq0eg")
-metadata/_edit_lock_ = true
-
-[node name="KillAreaTwo" type="Area2D" parent="."]
-position = Vector2(890, 188)
-collision_layer = 64
-collision_mask = 9
-script = ExtResource("29_6irsf")
-
-[node name="KILLAREASIZE" type="CollisionShape2D" parent="KillAreaTwo"]
-position = Vector2(391, 2)
-shape = SubResource("RectangleShape2D_kq0eg")
-metadata/_edit_lock_ = true
+
+[node name="Coins" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(32, 0)
+
+[node name="Coins2" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(48, 0)
+
+[node name="Coins3" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(64, 0)
+
+[node name="Coins4" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(80, 0)
+
+[node name="Coins5" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(96, 0)
+
+[node name="Coins6" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(136, -24)
+
+[node name="Coins7" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(152, -24)
+
+[node name="Coins8" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(168, -24)
+
+[node name="Coins9" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(184, -56)
+
+[node name="Coins10" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(200, -56)
+
+[node name="Coins11" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(232, 8)
+
+[node name="Coins12" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(248, 8)
+
+[node name="Coins13" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(264, 8)
+
+[node name="Coins14" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(312, -24)
+
+[node name="Coins15" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(256, -88)
+
+[node name="Coins16" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(272, -88)
+
+[node name="Coins17" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(312, -88)
+
+[node name="Coins18" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(328, -88)
+
+[node name="Coins19" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(328, -24)
+
+[node name="Coins20" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(376, -24)
+
+[node name="Coins21" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(392, -24)
+
+[node name="Coins22" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(408, -24)
+
+[node name="Coins23" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(424, -24)
+
+[node name="Coins24" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(440, -24)
+
+[node name="Coins25" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(504, 8)
+
+[node name="Coins26" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(520, 8)
+
+[node name="Coins27" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(552, 40)
+
+[node name="Coins28" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(568, 40)
+
+[node name="Coins29" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(584, 40)
+
+[node name="Coins30" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(680, 72)
+
+[node name="Coins31" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(696, 56)
+
+[node name="Coins32" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(712, 40)
+
+[node name="Coins33" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(728, 88)
+
+[node name="Coins34" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(760, 88)
+
+[node name="Coins36" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(776, 88)
+
+[node name="Coins37" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(792, 88)
+
+[node name="Coins38" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(832, 40)
+
+[node name="Coins39" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(848, 40)
+
+[node name="Coins40" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(864, 40)
+
+[node name="Coins41" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(880, 40)
+
+[node name="Coins42" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(896, 40)
+
+[node name="Coins43" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(912, 40)
+
+[node name="Coins44" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(928, 40)
+
+[node name="Coins45" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(944, 40)
+
+[node name="Coins46" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(960, 40)
+
+[node name="Coins47" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(976, 40)
+
+[node name="Coins48" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(992, 40)
+
+[node name="Coins49" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1008, 40)
+
+[node name="Coins50" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1056, 40)
+
+[node name="Coins53" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1072, 40)
+
+[node name="Coins54" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1088, 40)
+
+[node name="Coins55" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1104, 40)
+
+[node name="Coins56" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1152, 0)
+
+[node name="Coins57" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1168, 0)
+
+[node name="Coins58" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1184, 0)
+
+[node name="Coins59" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1256, -24)
+
+[node name="Coins60" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1272, -24)
+
+[node name="Coins51" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1040, 40.000008)
+rotation = -1.6188856
+
+[node name="Coins52" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(1024, 40.000008)
+rotation = -1.6188856
+
+[node name="Coins35" parent="Itens/Coins" instance=ExtResource("6_tpw1y")]
+position = Vector2(744, 88)
 
 [node name="Enemies" type="Node2D" parent="."]
 position = Vector2(234, -100)
 
-[node name="Enemie-pig" type="CharacterBody2D" parent="Enemies"]
-z_index = -1
-position = Vector2(41, 85)
-collision_layer = 4
-collision_mask = 23
-script = ExtResource("36_7bg66")
+[node name="Enemie-pig" parent="Enemies" instance=ExtResource("7_5aniq")]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemies/Enemie-pig"]
-position = Vector2(-2.3841858e-07, -2.3841858e-07)
-scale = Vector2(0.8, 0.8)
-sprite_frames = SubResource("SpriteFrames_0lv46")
-animation = &"Attack"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
+[node name="Enemie-pig4" parent="Enemies" instance=ExtResource("7_5aniq")]
+position = Vector2(1094, 60)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemie-pig"]
-position = Vector2(2, 3.5)
-shape = SubResource("RectangleShape2D_yowld")
-metadata/_edit_lock_ = true
+[node name="Enemie-pig5" parent="Enemies" instance=ExtResource("7_5aniq")]
+position = Vector2(1316, 16)
 
-[node name="RayCast2D" type="RayCast2D" parent="Enemies/Enemie-pig"]
-position = Vector2(1, 4)
-target_position = Vector2(-11, 0)
-collision_mask = 138
-metadata/_edit_lock_ = true
+[node name="Enemie-pig6" parent="Enemies" instance=ExtResource("7_5aniq")]
+position = Vector2(1182, 20)
 
-[node name="AttackerL" type="RayCast2D" parent="Enemies/Enemie-pig"]
-position = Vector2(1, 4)
-target_position = Vector2(-14, 0)
-metadata/_edit_lock_ = true
+[node name="Enemie-pig2" parent="Enemies" instance=ExtResource("7_5aniq")]
+position = Vector2(102, -20)
 
-[node name="AtackerR" type="RayCast2D" parent="Enemies/Enemie-pig"]
-position = Vector2(2, 4)
-target_position = Vector2(14, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageL" type="RayCast2D" parent="Enemies/Enemie-pig"]
-position = Vector2(2, 4)
-target_position = Vector2(-25, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageR" type="RayCast2D" parent="Enemies/Enemie-pig"]
-position = Vector2(2, 4)
-target_position = Vector2(25, 0)
-metadata/_edit_lock_ = true
-
-[node name="Enemie-pig2" type="CharacterBody2D" parent="Enemies"]
-z_index = -1
-position = Vector2(16, 9)
-collision_layer = 4
-collision_mask = 23
-script = ExtResource("36_7bg66")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(-2.3841858e-07, -2.3841858e-07)
-scale = Vector2(0.8, 0.8)
-sprite_frames = SubResource("SpriteFrames_0lv46")
-animation = &"Attack"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(2, 3.5)
-shape = SubResource("RectangleShape2D_yowld")
-metadata/_edit_lock_ = true
-
-[node name="RayCast2D" type="RayCast2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(1, 4)
-target_position = Vector2(-11, 0)
-collision_mask = 138
-metadata/_edit_lock_ = true
-
-[node name="AttackerL" type="RayCast2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(1, 4)
-target_position = Vector2(-14, 0)
-metadata/_edit_lock_ = true
-
-[node name="AtackerR" type="RayCast2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(2, 4)
-target_position = Vector2(14, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageL" type="RayCast2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(2, 4)
-target_position = Vector2(-25, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageR" type="RayCast2D" parent="Enemies/Enemie-pig2"]
-position = Vector2(2, 4)
-target_position = Vector2(25, 0)
-metadata/_edit_lock_ = true
-
-[node name="Enemie-pig3" type="CharacterBody2D" parent="Enemies"]
-z_index = -1
-position = Vector2(559, 153)
-collision_layer = 4
-collision_mask = 23
-script = ExtResource("36_7bg66")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(-2.3841858e-07, -2.3841858e-07)
-scale = Vector2(0.8, 0.8)
-sprite_frames = SubResource("SpriteFrames_0lv46")
-animation = &"Attack"
-autoplay = "Idle"
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(2, 3.5)
-shape = SubResource("RectangleShape2D_yowld")
-metadata/_edit_lock_ = true
-
-[node name="RayCast2D" type="RayCast2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(1, 4)
-target_position = Vector2(-11, 0)
-collision_mask = 138
-metadata/_edit_lock_ = true
-
-[node name="AttackerL" type="RayCast2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(1, 4)
-target_position = Vector2(-14, 0)
-metadata/_edit_lock_ = true
-
-[node name="AtackerR" type="RayCast2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(2, 4)
-target_position = Vector2(14, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageL" type="RayCast2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(2, 4)
-target_position = Vector2(-25, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageR" type="RayCast2D" parent="Enemies/Enemie-pig3"]
-position = Vector2(2, 4)
-target_position = Vector2(25, 0)
-metadata/_edit_lock_ = true
+[node name="Enemie-pig3" parent="Enemies" instance=ExtResource("7_5aniq")]
+position = Vector2(550, 116)
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
@@ -2504,8 +712,68 @@ position = Vector2(-16.5, 0)
 shape = SubResource("RectangleShape2D_oos3a")
 metadata/_edit_lock_ = true
 
+[node name="StaticBody2D4" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1367, -24)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D4"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1209, -23)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D9"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1464, -72)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D5"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1384, -72)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D6"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1590, -71)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D7"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="InvisibleBoxes"]
+position = Vector2(1512, -72)
+collision_layer = 128
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleBoxes/StaticBody2D8"]
+position = Vector2(-16.5, 0)
+shape = SubResource("RectangleShape2D_oos3a")
+metadata/_edit_lock_ = true
+
 [node name="GIGANON" type="StaticBody2D" parent="InvisibleBoxes"]
-position = Vector2(1424, 248)
+position = Vector2(1328, 192)
 collision_layer = 128
 collision_mask = 4
 
@@ -2525,182 +793,16 @@ shape = SubResource("RectangleShape2D_1v5b4")
 metadata/_edit_lock_ = true
 
 [node name="Pig-Plataform" type="Node2D" parent="."]
+position = Vector2(24, -16)
 
-[node name="BIG-PIG" type="CharacterBody2D" parent="Pig-Plataform"]
-z_index = -1
-position = Vector2(1272, 176)
-collision_layer = 2
-collision_mask = 255
-script = ExtResource("47_yowld")
+[node name="BIG-PIG" parent="Pig-Plataform" instance=ExtResource("10_wnmm1")]
+position = Vector2(976, -184)
 
-[node name="BIG-ANIMATION" type="AnimatedSprite2D" parent="Pig-Plataform/BIG-PIG"]
-position = Vector2(-22, -84)
-scale = Vector2(15, 15)
-sprite_frames = SubResource("SpriteFrames_0lv46")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.9240984
-metadata/_edit_lock_ = true
+[node name="Knight" parent="." instance=ExtResource("42_qdrj4")]
+position = Vector2(1003, -414)
 
-[node name="BIG-SHAPE" type="CollisionShape2D" parent="Pig-Plataform/BIG-PIG"]
-position = Vector2(-16, 0)
-shape = SubResource("RectangleShape2D_v272i")
+[node name="KillArea" parent="." instance=ExtResource("12_sqleu")]
+position = Vector2(1259, 167)
 
-[node name="RayCast2D" type="RayCast2D" parent="Pig-Plataform/BIG-PIG"]
-position = Vector2(1, 4)
-target_position = Vector2(-177, -4)
-collision_mask = 130
-metadata/_edit_lock_ = true
-
-[node name="Portal" type="Area2D" parent="."]
-position = Vector2(1424, 40)
-script = ExtResource("48_v272i")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-shape = SubResource("CapsuleShape2D_1v5b4")
-metadata/_edit_lock_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Portal"]
-sprite_frames = SubResource("SpriteFrames_bvm4o")
-autoplay = "default"
-frame_progress = 0.5317936
-metadata/_edit_lock_ = true
-
-[connection signal="animation_finished" from="Knight/AnimatedSprite2D" to="Knight" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Apples/Apple" to="Itens/Apples/Apple" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Apples/Apple/AnimatedSprite2D" to="Itens/Apples/Apple" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Apples/Apple3" to="Itens/Apples/Apple3" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Apples/Apple3/AnimatedSprite2D" to="Itens/Apples/Apple3" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Apples/Apple2" to="Itens/Apples/Apple2" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Apples/Apple2/AnimatedSprite2D" to="Itens/Apples/Apple2" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Apples/Apple4" to="Itens/Apples/Apple4" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Apples/Apple4/AnimatedSprite2D" to="Itens/Apples/Apple4" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Potions/SpeedPotion" to="Itens/Potions/SpeedPotion" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Potions/SpeedPotion/AnimatedSprite2D" to="Itens/Potions/SpeedPotion" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Potions/ForcePotion" to="Itens/Potions/ForcePotion" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Potions/ForcePotion/AnimatedSprite2D" to="Itens/Potions/ForcePotion" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Potions/Cristal" to="Itens/Potions/Cristal" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Potions/Cristal/AnimatedSprite2D" to="Itens/Potions/Cristal" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins" to="Itens/Coins/Coins" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins/AnimatedSprite2D" to="Itens/Coins/Coins" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins2" to="Itens/Coins/Coins2" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins2/AnimatedSprite2D" to="Itens/Coins/Coins2" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins11" to="Itens/Coins/Coins11" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins11/AnimatedSprite2D" to="Itens/Coins/Coins11" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins12" to="Itens/Coins/Coins12" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins12/AnimatedSprite2D" to="Itens/Coins/Coins12" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins13" to="Itens/Coins/Coins13" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins13/AnimatedSprite2D" to="Itens/Coins/Coins13" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins14" to="Itens/Coins/Coins14" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins14/AnimatedSprite2D" to="Itens/Coins/Coins14" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins15" to="Itens/Coins/Coins15" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins15/AnimatedSprite2D" to="Itens/Coins/Coins15" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins16" to="Itens/Coins/Coins16" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins16/AnimatedSprite2D" to="Itens/Coins/Coins16" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins17" to="Itens/Coins/Coins17" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins17/AnimatedSprite2D" to="Itens/Coins/Coins17" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins21" to="Itens/Coins/Coins21" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins21/AnimatedSprite2D" to="Itens/Coins/Coins21" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins22" to="Itens/Coins/Coins22" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins22/AnimatedSprite2D" to="Itens/Coins/Coins22" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins23" to="Itens/Coins/Coins23" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins23/AnimatedSprite2D" to="Itens/Coins/Coins23" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins24" to="Itens/Coins/Coins24" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins24/AnimatedSprite2D" to="Itens/Coins/Coins24" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins26" to="Itens/Coins/Coins26" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins26/AnimatedSprite2D" to="Itens/Coins/Coins26" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins27" to="Itens/Coins/Coins27" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins27/AnimatedSprite2D" to="Itens/Coins/Coins27" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins28" to="Itens/Coins/Coins28" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins28/AnimatedSprite2D" to="Itens/Coins/Coins28" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins29" to="Itens/Coins/Coins29" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins29/AnimatedSprite2D" to="Itens/Coins/Coins29" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins30" to="Itens/Coins/Coins30" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins30/AnimatedSprite2D" to="Itens/Coins/Coins30" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins31" to="Itens/Coins/Coins31" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins31/AnimatedSprite2D" to="Itens/Coins/Coins31" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins32" to="Itens/Coins/Coins32" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins32/AnimatedSprite2D" to="Itens/Coins/Coins32" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins33" to="Itens/Coins/Coins33" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins33/AnimatedSprite2D" to="Itens/Coins/Coins33" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins34" to="Itens/Coins/Coins34" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins34/AnimatedSprite2D" to="Itens/Coins/Coins34" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins35" to="Itens/Coins/Coins35" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins35/AnimatedSprite2D" to="Itens/Coins/Coins35" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins36" to="Itens/Coins/Coins36" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins36/AnimatedSprite2D" to="Itens/Coins/Coins36" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins37" to="Itens/Coins/Coins37" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins37/AnimatedSprite2D" to="Itens/Coins/Coins37" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins38" to="Itens/Coins/Coins38" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins38/AnimatedSprite2D" to="Itens/Coins/Coins38" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins39" to="Itens/Coins/Coins39" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins39/AnimatedSprite2D" to="Itens/Coins/Coins39" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins40" to="Itens/Coins/Coins40" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins40/AnimatedSprite2D" to="Itens/Coins/Coins40" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins41" to="Itens/Coins/Coins41" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins41/AnimatedSprite2D" to="Itens/Coins/Coins41" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins42" to="Itens/Coins/Coins42" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins42/AnimatedSprite2D" to="Itens/Coins/Coins42" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins43" to="Itens/Coins/Coins43" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins43/AnimatedSprite2D" to="Itens/Coins/Coins43" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins44" to="Itens/Coins/Coins44" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins44/AnimatedSprite2D" to="Itens/Coins/Coins44" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins45" to="Itens/Coins/Coins45" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins45/AnimatedSprite2D" to="Itens/Coins/Coins45" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins46" to="Itens/Coins/Coins46" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins46/AnimatedSprite2D" to="Itens/Coins/Coins46" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins47" to="Itens/Coins/Coins47" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins47/AnimatedSprite2D" to="Itens/Coins/Coins47" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins48" to="Itens/Coins/Coins48" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins48/AnimatedSprite2D" to="Itens/Coins/Coins48" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins49" to="Itens/Coins/Coins49" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins49/AnimatedSprite2D" to="Itens/Coins/Coins49" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins50" to="Itens/Coins/Coins50" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins50/AnimatedSprite2D" to="Itens/Coins/Coins50" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins51" to="Itens/Coins/Coins51" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins51/AnimatedSprite2D" to="Itens/Coins/Coins51" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins52" to="Itens/Coins/Coins52" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins52/AnimatedSprite2D" to="Itens/Coins/Coins52" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins53" to="Itens/Coins/Coins53" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins53/AnimatedSprite2D" to="Itens/Coins/Coins53" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins54" to="Itens/Coins/Coins54" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins54/AnimatedSprite2D" to="Itens/Coins/Coins54" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins55" to="Itens/Coins/Coins55" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins55/AnimatedSprite2D" to="Itens/Coins/Coins55" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins56" to="Itens/Coins/Coins56" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins56/AnimatedSprite2D" to="Itens/Coins/Coins56" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins57" to="Itens/Coins/Coins57" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins57/AnimatedSprite2D" to="Itens/Coins/Coins57" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins58" to="Itens/Coins/Coins58" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins58/AnimatedSprite2D" to="Itens/Coins/Coins58" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins25" to="Itens/Coins/Coins25" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins25/AnimatedSprite2D" to="Itens/Coins/Coins25" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins20" to="Itens/Coins/Coins20" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins20/AnimatedSprite2D" to="Itens/Coins/Coins20" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins18" to="Itens/Coins/Coins18" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins18/AnimatedSprite2D" to="Itens/Coins/Coins18" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins19" to="Itens/Coins/Coins19" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins19/AnimatedSprite2D" to="Itens/Coins/Coins19" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins3" to="Itens/Coins/Coins3" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins3/AnimatedSprite2D" to="Itens/Coins/Coins3" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins4" to="Itens/Coins/Coins4" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins4/AnimatedSprite2D" to="Itens/Coins/Coins4" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins5" to="Itens/Coins/Coins5" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins5/AnimatedSprite2D" to="Itens/Coins/Coins5" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins6" to="Itens/Coins/Coins6" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins6/AnimatedSprite2D" to="Itens/Coins/Coins6" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins7" to="Itens/Coins/Coins7" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins7/AnimatedSprite2D" to="Itens/Coins/Coins7" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins8" to="Itens/Coins/Coins8" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins8/AnimatedSprite2D" to="Itens/Coins/Coins8" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins9" to="Itens/Coins/Coins9" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins9/AnimatedSprite2D" to="Itens/Coins/Coins9" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Itens/Coins/Coins10" to="Itens/Coins/Coins10" method="_on_body_entered"]
-[connection signal="animation_finished" from="Itens/Coins/Coins10/AnimatedSprite2D" to="Itens/Coins/Coins10" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="KillArea" to="KillArea" method="_on_body_entered"]
-[connection signal="body_entered" from="KillAreaTwo" to="KillAreaTwo" method="_on_body_entered"]
-[connection signal="animation_finished" from="Enemies/Enemie-pig/AnimatedSprite2D" to="Enemies/Enemie-pig" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="animation_finished" from="Enemies/Enemie-pig2/AnimatedSprite2D" to="Enemies/Enemie-pig2" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="animation_finished" from="Enemies/Enemie-pig3/AnimatedSprite2D" to="Enemies/Enemie-pig3" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="animation_finished" from="Pig-Plataform/BIG-PIG/BIG-ANIMATION" to="Pig-Plataform/BIG-PIG" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
+[node name="Vertical Portal" parent="." instance=ExtResource("13_ce72a")]
+position = Vector2(1472, 88)

@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://bp4t1xd0rt8bh"]
+
+[ext_resource type="Script" uid="uid://cfck0mswcqy2" path="res://Scene/portal.gd" id="1_3i75b"]
+[ext_resource type="Texture2D" uid="uid://c8e1cpo47vrtl" path="res://Itens/Dimensional_Portal.png" id="2_5agqb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ks6di"]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7rrx"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gbb6"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivkgn"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5y1o0"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35kj6"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlerf"]
+atlas = ExtResource("2_5agqb")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3d7nu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7rrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gbb6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivkgn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5y1o0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35kj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlerf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Vertical Portal" type="Area2D"]
+position = Vector2(1424, 40)
+script = ExtResource("1_3i75b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ks6di")
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_3d7nu")
+autoplay = "default"
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

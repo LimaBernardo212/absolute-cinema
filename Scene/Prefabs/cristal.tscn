@@ -1,0 +1,80 @@
+[gd_scene load_steps=14 format=3 uid="uid://clphswuos1ykx"]
+
+[ext_resource type="Script" uid="uid://du41qaegfsij2" path="res://Scene/coins.gd" id="1_ba6j2"]
+[ext_resource type="Texture2D" uid="uid://bfybxt0wf1cev" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving1.png" id="2_4vm6h"]
+[ext_resource type="Texture2D" uid="uid://dkpfo5kvti4w3" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving2.png" id="3_1qv2g"]
+[ext_resource type="Texture2D" uid="uid://c4acv4tuvnlkr" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving3.png" id="4_t3rmn"]
+[ext_resource type="Texture2D" uid="uid://dx3j31kbr4u1h" path="res://Itens/32x32 In-Game Items Asset Pack/BlueCrystalMoving4.png" id="5_5n0xu"]
+[ext_resource type="Texture2D" uid="uid://4jq3fb4anu3n" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect1.png" id="6_gcaa1"]
+[ext_resource type="Texture2D" uid="uid://c4i1q87i3kt3p" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect2.png" id="7_exdvd"]
+[ext_resource type="Texture2D" uid="uid://cu8w0wsovfoax" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect3.png" id="8_stdc7"]
+[ext_resource type="Texture2D" uid="uid://pq1qc637jshd" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect4.png" id="9_582py"]
+[ext_resource type="Texture2D" uid="uid://bulxak4hj4hs5" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect5.png" id="10_tgmp2"]
+[ext_resource type="Texture2D" uid="uid://qnqxha30s7u6" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect6.png" id="11_p8a86"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8gscn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4vm6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1qv2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t3rmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5n0xu")
+}],
+"loop": true,
+"name": &"Cristal_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_gcaa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_exdvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_stdc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_582py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tgmp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p8a86")
+}],
+"loop": false,
+"name": &"piking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6ub7w"]
+radius = 2.1213074
+height = 9.89949
+
+[node name="Cristal" type="Area2D"]
+position = Vector2(296, -8)
+collision_layer = 8
+script = ExtResource("1_ba6j2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_8gscn")
+animation = &"Cristal_idle"
+autoplay = "Cristal_idle"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.7853982
+shape = SubResource("CapsuleShape2D_6ub7w")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

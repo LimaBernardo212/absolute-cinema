@@ -1,0 +1,78 @@
+[gd_scene load_steps=14 format=3 uid="uid://dgfe6bou7blr2"]
+
+[ext_resource type="Script" uid="uid://1123jvvs3hpj" path="res://Scene/speed_potion.gd" id="1_42bk4"]
+[ext_resource type="Texture2D" uid="uid://b5aamlty7ddf1" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving1.png" id="2_l7702"]
+[ext_resource type="Texture2D" uid="uid://b5sw4ilydx4b4" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving2.png" id="3_bn5m5"]
+[ext_resource type="Texture2D" uid="uid://bjnww2puwevcl" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving3.png" id="4_2hrnq"]
+[ext_resource type="Texture2D" uid="uid://i5s760jxx7ws" path="res://Itens/32x32 In-Game Items Asset Pack/BigManaPotionMoving4.png" id="5_42abi"]
+[ext_resource type="Texture2D" uid="uid://4jq3fb4anu3n" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect1.png" id="6_esws8"]
+[ext_resource type="Texture2D" uid="uid://c4i1q87i3kt3p" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect2.png" id="7_meh81"]
+[ext_resource type="Texture2D" uid="uid://cu8w0wsovfoax" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect3.png" id="8_sanm6"]
+[ext_resource type="Texture2D" uid="uid://pq1qc637jshd" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect4.png" id="9_cai4p"]
+[ext_resource type="Texture2D" uid="uid://bulxak4hj4hs5" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect5.png" id="10_b3nmm"]
+[ext_resource type="Texture2D" uid="uid://qnqxha30s7u6" path="res://Itens/32x32 In-Game Items Asset Pack/PickUpItemEffect6.png" id="11_j87nn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ca1ch"]
+radius = 7.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x7l8b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_l7702")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bn5m5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2hrnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_42abi")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_esws8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_meh81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sanm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cai4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_b3nmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_j87nn")
+}],
+"loop": false,
+"name": &"piking",
+"speed": 5.0
+}]
+
+[node name="SpeedPotion" type="Area2D"]
+position = Vector2(712, 39)
+collision_layer = 8
+script = ExtResource("1_42bk4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ca1ch")
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_x7l8b")
+animation = &"Idle"
+autoplay = "Idle"
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
