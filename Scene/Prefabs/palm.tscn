@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfakkfydsa20b"]
+
+[ext_resource type="Script" uid="uid://enlvqus5gv0f" path="res://Scene/palm.gd" id="1_3ugyc"]
+[ext_resource type="Texture2D" uid="uid://djqs4mrtsmwcb" path="res://Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 01.png" id="2_afxkr"]
+[ext_resource type="Texture2D" uid="uid://b7cx87mnluskk" path="res://Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 02.png" id="3_jms8g"]
+[ext_resource type="Texture2D" uid="uid://dqhmq8mqrwk2" path="res://Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png" id="4_khfiv"]
+[ext_resource type="Texture2D" uid="uid://bcogt88f7tetl" path="res://Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png" id="5_1d5a5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_afxkr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_afxkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jms8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_khfiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1d5a5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_3ugyc"]
+a = Vector2(-18, 0.5)
+b = Vector2(18, 0.5)
+
+[node name="Palm" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_3ugyc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_afxkr")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("SegmentShape2D_3ugyc")
+disabled = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-26, -42)
+target_position = Vector2(54, 0)

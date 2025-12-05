@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dnel65w5lg54h"]
+[gd_scene load_steps=26 format=3 uid="uid://dnel65w5lg54h"]
 
 [ext_resource type="Script" uid="uid://bko6unrh6xyt5" path="res://Scene/enemie_pig.gd" id="1_o3qc8"]
 [ext_resource type="Texture2D" uid="uid://dhrapu3qv3lj8" path="res://Animation/Enemies/Sprites/03-Pig/Attack (34x28).png" id="2_0bstt"]
@@ -142,16 +142,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5s0o6"]
-size = Vector2(14, 11)
+size = Vector2(11, 11)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d653x"]
-radius = 22.0
+radius = 18.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o3qc8"]
+radius = 18.0
+height = 64.0
 
 [node name="Enemie-pig" type="CharacterBody2D"]
 z_index = -1
 position = Vector2(41, 85)
 collision_layer = 4
-collision_mask = 23
+collision_mask = 791
 script = ExtResource("1_o3qc8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -163,7 +167,7 @@ autoplay = "Idle"
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 5.5)
+position = Vector2(2.5, 5.5)
 shape = SubResource("RectangleShape2D_5s0o6")
 metadata/_edit_lock_ = true
 
@@ -176,23 +180,13 @@ metadata/_edit_lock_ = true
 [node name="AttackerL" type="RayCast2D" parent="."]
 position = Vector2(1, 4)
 enabled = false
-target_position = Vector2(-14, 0)
+target_position = Vector2(-13, 0)
 metadata/_edit_lock_ = true
 
 [node name="AtackerR" type="RayCast2D" parent="."]
 position = Vector2(2, 4)
 enabled = false
 target_position = Vector2(14, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageL" type="RayCast2D" parent="."]
-position = Vector2(2, 4)
-target_position = Vector2(-22, 0)
-metadata/_edit_lock_ = true
-
-[node name="DamageR" type="RayCast2D" parent="."]
-position = Vector2(2, 4)
-target_position = Vector2(21, -1)
 metadata/_edit_lock_ = true
 
 [node name="PlayerDangerZone" type="Area2D" parent="."]
@@ -202,5 +196,15 @@ collision_layer = 4
 position = Vector2(2, 3)
 shape = SubResource("CircleShape2D_d653x")
 
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 513
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(2, -14)
+shape = SubResource("CapsuleShape2D_o3qc8")
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="PlayerDangerZone" to="." method="_on_player_danger_zone_body_entered"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
+[connection signal="body_exited" from="HitBox" to="." method="_on_hit_box_body_exited"]

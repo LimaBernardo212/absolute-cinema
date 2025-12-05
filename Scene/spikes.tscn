@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://baha86om371gi"]
+
+[ext_resource type="Texture2D" uid="uid://dhvi78mkjqv2t" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="1_g6xcm"]
+[ext_resource type="Script" uid="uid://b886ciykmqtnj" path="res://Scene/spikes.gd" id="1_rclxw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6xcm"]
+size = Vector2(25, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rclxw"]
+size = Vector2(30, 4)
+
+[node name="Spikes" type="StaticBody2D"]
+z_index = -3
+collision_layer = 256
+collision_mask = 35
+script = ExtResource("1_rclxw")
+
+[node name="SpikeArea" type="Area2D" parent="."]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpikeArea"]
+position = Vector2(1, 8)
+shape = SubResource("RectangleShape2D_g6xcm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g6xcm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 14)
+shape = SubResource("RectangleShape2D_rclxw")
+
+[connection signal="body_entered" from="SpikeArea" to="." method="_on_spike_area_body_entered"]

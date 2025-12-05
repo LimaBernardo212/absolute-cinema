@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ks6di"]
 radius = 8.0
-height = 32.0
+height = 60.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g7rrx"]
 atlas = ExtResource("2_wwqnc")
@@ -64,12 +64,13 @@ script = ExtResource("1_k67ed")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_ks6di")
-metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.668185e-05, 1.0000001)
 rotation = -1.5707964
+scale = Vector2(1, 1.8094221)
 sprite_frames = SubResource("SpriteFrames_3d7nu")
 autoplay = "default"
-metadata/_edit_lock_ = true
+frame_progress = 0.8117967
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -70,6 +70,9 @@ ui_attack={
 2d_physics/layer_6="HurtBox"
 2d_physics/layer_7="KillArea"
 2d_physics/layer_8="InvisibleBoxesForEnemies"
+2d_physics/layer_9="Patrol_Enemies"
+2d_physics/layer_10="Cannons"
+2d_physics/layer_11="Bullets"
 
 [rendering]
 
