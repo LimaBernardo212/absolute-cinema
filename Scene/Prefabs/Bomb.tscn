@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cwo4a1wdoyjfi"]
+[gd_scene load_steps=18 format=3 uid="uid://cwo4a1wdoyjfi"]
 
 [ext_resource type="Texture2D" uid="uid://d3rbhmoaw1uyv" path="res://Animation/Enemies/Sprites/09-Bomb/Boooooom (52x56).png" id="1_k538s"]
+[ext_resource type="Script" uid="uid://dnfk2s33iogej" path="res://Scene/Prefabs/bomb.gd" id="1_te8gi"]
 [ext_resource type="Texture2D" uid="uid://dxrgj3j3daydm" path="res://Animation/Enemies/Sprites/09-Bomb/Bomb On (52x56).png" id="2_te8gi"]
 [ext_resource type="Texture2D" uid="uid://2vpss1rexsr3" path="res://Animation/Enemies/Sprites/09-Bomb/Bomb Off.png" id="3_3qamc"]
 
@@ -82,7 +83,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4mhf5")
 }],
-"loop": true,
+"loop": false,
 "name": &"BombOn",
 "speed": 5.0
 }, {
@@ -96,8 +97,15 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8hh7a"]
+radius = 1.4142135
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k538s"]
+radius = 26.476404
 
 [node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 64
+collision_mask = 3
+script = ExtResource("1_te8gi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pworb")
@@ -107,3 +115,10 @@ autoplay = "default"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_8hh7a")
+
+[node name="Explode" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explode"]
+shape = SubResource("CircleShape2D_k538s")
+
+[connection signal="body_entered" from="Explode" to="." method="_on_explode_body_entered"]

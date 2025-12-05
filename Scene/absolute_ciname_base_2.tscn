@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://cxr4k04x3bln8"]
+[gd_scene load_steps=30 format=4 uid="uid://cxr4k04x3bln8"]
 
 [ext_resource type="Texture2D" uid="uid://dbhrq0cwtafdp" path="res://Animation/Tile-set/nature-paltformer-tileset-16x16.png" id="1_m8n1m"]
 [ext_resource type="PackedScene" uid="uid://cev8bjl6bm512" path="res://Scene/Prefabs/knight.tscn" id="2_2j48q"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dhy7hlwdcpntk" path="res://Scene/Prefabs/ship.tscn" id="14_cwfhl"]
 [ext_resource type="PackedScene" uid="uid://yugxnfg8hcoa" path="res://ghost.tscn" id="15_f5kon"]
 [ext_resource type="PackedScene" uid="uid://uci5oopf2j76" path="res://Scene/Prefabs/full_cannon.tscn" id="16_xx2cb"]
+[ext_resource type="PackedScene" uid="uid://cwo4a1wdoyjfi" path="res://Scene/Prefabs/Bomb.tscn" id="17_n83gk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsb8h"]
 texture = ExtResource("1_m8n1m")
@@ -1252,3 +1253,6 @@ position = Vector2(1049, 164)
 
 [node name="Full_Cannon" parent="." instance=ExtResource("16_xx2cb")]
 position = Vector2(347.00003, 208)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("17_n83gk")]
+position = Vector2(-72, 119)
